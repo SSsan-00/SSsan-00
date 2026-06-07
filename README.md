@@ -25,6 +25,29 @@ C# / .NET and TypeScript を中心に、静的解析ツール、Windows GUI/CLI�
   <img alt="xUnit" src="https://img.shields.io/badge/xUnit-Test_Automation-512BD4?style=flat-square">
 </p>
 
+## Visual Charts
+
+Repository-derived signals, not proficiency scores.
+
+```mermaid
+pie showData
+  title Public Repository Skill Signals
+  "C# / .NET analysis tools" : 8
+  "TypeScript / browser tools" : 4
+  "Automation / PowerShell / VBA" : 4
+  "Rust / low-level experiments" : 3
+  "Editor / terminal configuration" : 2
+```
+
+```mermaid
+pie showData
+  title Output Types
+  "Windows GUI / CLI tools" : 7
+  "Single HTML / browser apps" : 4
+  "Reports / Excel automation" : 3
+  "Learning / systems experiments" : 3
+```
+
 ## Skill Map
 
 ```mermaid
