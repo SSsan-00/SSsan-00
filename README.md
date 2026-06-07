@@ -30,7 +30,7 @@ C# / .NET and TypeScript を中心に、静的解析ツール、Windows GUI/CLI�
 Repository-derived signals, not proficiency scores.
 
 ```mermaid
-%%{init: {"theme": "base", "themeVariables": {"pie1": "#ff006e", "pie2": "#00d4ff", "pie3": "#ffbe0b", "pie4": "#8338ec", "pie5": "#06d6a0", "pieStrokeColor": "#ffffff", "pieStrokeWidth": "2px", "pieOuterStrokeWidth": "2px", "pieTitleTextColor": "#111827", "pieTitleTextSize": "18px", "pieLegendTextColor": "#111827", "pieLegendTextSize": "14px", "pieSectionTextColor": "#ffffff", "pieSectionTextSize": "14px"}}}%%
+%%{init: {"theme": "dark", "themeVariables": {"background": "#0f172a", "mainBkg": "#0f172a", "textColor": "#f8fafc", "primaryTextColor": "#f8fafc", "pie1": "#ff006e", "pie2": "#00d4ff", "pie3": "#ffbe0b", "pie4": "#8338ec", "pie5": "#06d6a0", "pieStrokeColor": "#0f172a", "pieStrokeWidth": "3px", "pieOuterStrokeColor": "#f8fafc", "pieOuterStrokeWidth": "2px", "pieTitleTextColor": "#f8fafc", "pieTitleTextSize": "18px", "pieLegendTextColor": "#f8fafc", "pieLegendTextSize": "15px", "pieSectionTextColor": "#ffffff", "pieSectionTextSize": "14px"}}}%%
 pie showData
   title Public Repository Skill Signals
   "C# / .NET analysis tools" : 8
@@ -41,7 +41,7 @@ pie showData
 ```
 
 ```mermaid
-%%{init: {"theme": "base", "themeVariables": {"pie1": "#3a86ff", "pie2": "#fb5607", "pie3": "#ff006e", "pie4": "#06d6a0", "pieStrokeColor": "#ffffff", "pieStrokeWidth": "2px", "pieOuterStrokeWidth": "2px", "pieTitleTextColor": "#111827", "pieTitleTextSize": "18px", "pieLegendTextColor": "#111827", "pieLegendTextSize": "14px", "pieSectionTextColor": "#ffffff", "pieSectionTextSize": "14px"}}}%%
+%%{init: {"theme": "dark", "themeVariables": {"background": "#0f172a", "mainBkg": "#0f172a", "textColor": "#f8fafc", "primaryTextColor": "#f8fafc", "pie1": "#3a86ff", "pie2": "#fb5607", "pie3": "#ff006e", "pie4": "#06d6a0", "pieStrokeColor": "#0f172a", "pieStrokeWidth": "3px", "pieOuterStrokeColor": "#f8fafc", "pieOuterStrokeWidth": "2px", "pieTitleTextColor": "#f8fafc", "pieTitleTextSize": "18px", "pieLegendTextColor": "#f8fafc", "pieLegendTextSize": "15px", "pieSectionTextColor": "#ffffff", "pieSectionTextSize": "14px"}}}%%
 pie showData
   title Output Types
   "Windows GUI / CLI tools" : 7
