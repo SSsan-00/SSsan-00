@@ -10,6 +10,8 @@ const token = process.env.GITHUB_TOKEN || process.env.GH_TOKEN || "";
 const timeZone = process.env.README_TIME_ZONE || "Asia/Tokyo";
 const maxEvidenceRepositories = Number(process.env.README_MAX_REPOSITORIES || 10);
 const maxFeaturedProjects = Number(process.env.README_MAX_FEATURED_PROJECTS || 6);
+const contributionSnakeLightPath = "assets/github-snake.svg";
+const contributionSnakeDarkPath = "assets/github-snake-dark.svg";
 
 const ignoredRepositoryNames = new Set([
   profileRepository.toLowerCase(),
@@ -568,6 +570,12 @@ function renderReadme(repositories) {
     "",
     renderBadgeGroup(secondarySkills, flatBadgeUrls),
     "",
+    "## Contribution Trail",
+    "",
+    "Daily GitHub activity rendered as a neon contribution path.",
+    "",
+    renderContributionTrail(),
+    "",
     "## Visual Charts",
     "",
     "Repository-derived signals, not proficiency scores.",
@@ -795,6 +803,16 @@ function renderPieChart(title, entries, colors) {
   ].join("\n");
 }
 
+function renderContributionTrail() {
+  return [
+    "<picture>",
+    `  <source media="(prefers-color-scheme: dark)" srcset="${contributionSnakeDarkPath}">`,
+    `  <source media="(prefers-color-scheme: light)" srcset="${contributionSnakeLightPath}">`,
+    `  <img alt="GitHub contribution snake animation" src="${contributionSnakeLightPath}">`,
+    "</picture>",
+  ].join("\n");
+}
+
 function renderSkillMap() {
   return [
     "```mermaid",
@@ -936,7 +954,7 @@ function renderWorkStyle() {
     '  ui --> verify["Test and verify behavior"]',
     '  export --> verify',
     '  verify --> package["Package as single HTML or single-file exe"]',
-    '  package --> automate["Refresh profile README with repository metadata"]',
+    '  package --> automate["Refresh README<br/>and activity trail"]',
     "```",
   ].join("\n");
 }

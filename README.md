@@ -27,6 +27,16 @@ C# / .NET、TypeScript、Rust を中心に、静的解析ツール、Windows GUI
   <img alt="Next.js" src="https://img.shields.io/badge/Next.js-React_App-000000?style=flat-square&logo=nextdotjs&logoColor=white">
 </p>
 
+## Contribution Trail
+
+Daily GitHub activity rendered as a neon contribution path.
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/github-snake-dark.svg">
+  <source media="(prefers-color-scheme: light)" srcset="assets/github-snake.svg">
+  <img alt="GitHub contribution snake animation" src="assets/github-snake.svg">
+</picture>
+
 ## Visual Charts
 
 Repository-derived signals, not proficiency scores.
@@ -148,7 +158,7 @@ flowchart TD
   ui --> verify["Test and verify behavior"]
   export --> verify
   verify --> package["Package as single HTML or single-file exe"]
-  package --> automate["Refresh profile README with repository metadata"]
+  package --> automate["Refresh README<br/>and activity trail"]
 ```
 
 ## Tech Stack
