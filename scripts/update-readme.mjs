@@ -65,6 +65,51 @@ const flatBadgeUrls = new Map([
   ["GitHub Actions", "https://img.shields.io/badge/GitHub_Actions-Automation-2088FF?style=flat-square&logo=githubactions&logoColor=white"],
 ]);
 
+const cardSkillBadgeUrls = new Map([
+  ["C#", buildFlatBadgeUrl("C#", "512BD4", { logo: "dotnet", logoColor: "white" })],
+  [".NET 9", buildFlatBadgeUrl(".NET 9", "512BD4", { logo: "dotnet", logoColor: "white" })],
+  [".NET", buildFlatBadgeUrl(".NET", "512BD4", { logo: "dotnet", logoColor: "white" })],
+  ["TypeScript", buildFlatBadgeUrl("TypeScript", "3178C6", { logo: "typescript", logoColor: "white" })],
+  ["PowerShell", buildFlatBadgeUrl("PowerShell", "2563EB", { logo: "powershell", logoColor: "white" })],
+  ["Rust", buildFlatBadgeUrl("Rust", "111827", { logo: "rust", logoColor: "white" })],
+  ["VBA", buildFlatBadgeUrl("VBA", "217346", { logo: "microsoft-excel", logoColor: "white" })],
+  ["JavaScript", buildFlatBadgeUrl("JavaScript", "B45309", { logo: "javascript", logoColor: "white" })],
+  ["HTML", buildFlatBadgeUrl("HTML", "DC2626", { logo: "html5", logoColor: "white" })],
+  ["Roslyn", buildFlatBadgeUrl("Roslyn", "6D28D9")],
+  ["SemanticModel", buildFlatBadgeUrl("SemanticModel", "7C3AED")],
+  ["MSBuildWorkspace", buildFlatBadgeUrl("MSBuildWorkspace", "512BD4")],
+  ["WinForms", buildFlatBadgeUrl("WinForms", "0369A1")],
+  ["ScriptDom", buildFlatBadgeUrl("ScriptDom", "BE123C")],
+  ["PostgreSQL", buildFlatBadgeUrl("PostgreSQL", "4169E1", { logo: "postgresql", logoColor: "white" })],
+  ["Vite", buildFlatBadgeUrl("Vite", "7C3AED", { logo: "vite", logoColor: "white" })],
+  ["Next.js", buildFlatBadgeUrl("Next.js", "111827", { logo: "nextdotjs", logoColor: "white" })],
+  ["React", buildFlatBadgeUrl("React", "0E7490", { logo: "react", logoColor: "white" })],
+  ["Tailwind CSS", buildFlatBadgeUrl("Tailwind CSS", "0891B2", { logo: "tailwindcss", logoColor: "white" })],
+  ["Monaco Editor", buildFlatBadgeUrl("Monaco Editor", "007ACC")],
+  ["Vitest", buildFlatBadgeUrl("Vitest", "4D7C0F", { logo: "vitest", logoColor: "white" })],
+  ["xUnit", buildFlatBadgeUrl("xUnit", "6D28D9")],
+  ["MSTest", buildFlatBadgeUrl("MSTest", "6D28D9")],
+  ["Excel", buildFlatBadgeUrl("Excel", "217346", { logo: "microsoft-excel", logoColor: "white" })],
+  ["WASM", buildFlatBadgeUrl("WASM", "6D28D9", { logo: "webassembly", logoColor: "white" })],
+  ["Neovim", buildFlatBadgeUrl("Neovim", "15803D", { logo: "neovim", logoColor: "white" })],
+  ["WezTerm", buildFlatBadgeUrl("WezTerm", "4338CA")],
+  ["GitHub Actions", buildFlatBadgeUrl("GitHub Actions", "2563EB", { logo: "githubactions", logoColor: "white" })],
+  ["SQL", buildFlatBadgeUrl("SQL", "2563EB")],
+  ["CLI", buildFlatBadgeUrl("CLI", "475569")],
+  ["CSV", buildFlatBadgeUrl("CSV", "15803D")],
+  ["XLSX", buildFlatBadgeUrl("XLSX", "15803D")],
+  ["TDD", buildFlatBadgeUrl("TDD", "BE123C")],
+]);
+
+const cardOutputBadgeUrls = new Map([
+  ["Windows GUI / CLI tools", buildFlatBadgeUrl("Windows GUI / CLI", "0369A1")],
+  ["Reports / Excel automation", buildFlatBadgeUrl("Reports / Excel", "15803D")],
+  ["Static analysis / code parsing", buildFlatBadgeUrl("Static analysis", "7C3AED")],
+  ["Single HTML / browser apps", buildFlatBadgeUrl("Browser apps", "0E7490")],
+  ["Learning / systems experiments", buildFlatBadgeUrl("Learning / systems", "EA580C")],
+  ["Editor / terminal configuration", buildFlatBadgeUrl("Editor / terminal", "475569")],
+]);
+
 const primarySkillOrder = [
   "C#",
   ".NET 9",
@@ -681,6 +726,24 @@ function fallbackBadgeUrl(skill) {
   return `https://img.shields.io/badge/${label}-334155?style=flat-square`;
 }
 
+function buildFlatBadgeUrl(label, color, options = {}) {
+  const params = new URLSearchParams({
+    style: "flat-square",
+    ...options,
+  });
+
+  return `https://img.shields.io/badge/${encodeShieldsPathSegment(label)}-${color}?${params}`;
+}
+
+function encodeShieldsPathSegment(value) {
+  return encodeURIComponent(
+    String(value)
+      .replace(/-/g, "--")
+      .replace(/_/g, "__")
+      .replace(/\s+/g, "_"),
+  );
+}
+
 function buildSkillSignalChart(repositories) {
   const signalGroups = [
     ["C# / .NET analysis tools", ["C#", ".NET", "Roslyn", "ScriptDom", "SemanticModel"]],
@@ -830,22 +893,28 @@ function renderFeaturedProjectCard(repository) {
   return [
     `<a href="${escapeHtml(repository.htmlUrl)}"><strong>${escapeHtml(repository.name)}</strong></a>`,
     "<br>",
-    `<sub>${escapeHtml(summary)}</sub>`,
+    escapeHtml(summary),
     "<br><br>",
-    "<strong>Signals</strong><br>",
-    renderInlineCodeChips(skills),
+    "<strong>Skills</strong><br>",
+    renderBadgeChips(skills, cardSkillBadgeUrls),
     "<br><br>",
-    "<strong>Output</strong><br>",
-    renderInlineCodeChips(outputs),
+    "<strong>Project Type</strong><br>",
+    renderBadgeChips(outputs, cardOutputBadgeUrls),
   ].join("");
 }
 
-function renderInlineCodeChips(values) {
+function renderBadgeChips(values, urlMap) {
   if (values.length === 0) {
-    return "<code>repository metadata</code>";
+    return renderBadgeImage("repository metadata", buildFlatBadgeUrl("repository metadata", "475569"));
   }
 
-  return values.map((value) => `<code>${escapeHtml(value)}</code>`).join(" ");
+  return values
+    .map((value) => renderBadgeImage(value, urlMap.get(value) || buildFlatBadgeUrl(value, "475569")))
+    .join(" ");
+}
+
+function renderBadgeImage(label, url) {
+  return `<img alt="${escapeHtml(label)}" src="${escapeHtml(url)}">`;
 }
 
 function skillsForRepository(repository) {
