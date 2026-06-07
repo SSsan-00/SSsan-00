@@ -1,8 +1,9 @@
 # SSsan-00
 
-C# / .NET and TypeScript を中心に、静的解析ツール、Windows GUI/CLI、単一HTMLで動く開発支援ツールを作っています。
+C# / .NET、TypeScript、Rust を中心に、静的解析ツール、Windows GUI/CLI、ブラウザで動く開発支援ツール、Excel自動化を作っています。
 
-<!-- Generated from public repository metadata, README files, and manifests on 2026-06-07. -->
+<!-- Generated from public repository metadata, README files, manifests, and repository languages on 2026-06-07. -->
+<!-- To change this README, update scripts/update-readme.mjs. Manual edits are overwritten by the scheduled workflow. -->
 
 ## Skill Snapshot
 
@@ -17,12 +18,13 @@ C# / .NET and TypeScript を中心に、静的解析ツール、Windows GUI/CLI�
 
 <p>
   <img alt="Roslyn" src="https://img.shields.io/badge/Roslyn-Code_Analysis-5C2D91?style=flat-square">
+  <img alt="SemanticModel" src="https://img.shields.io/badge/SemanticModel-Code_Analysis-5C2D91?style=flat-square">
+  <img alt="MSBuildWorkspace" src="https://img.shields.io/badge/MSBuildWorkspace-Project_Analysis-512BD4?style=flat-square">
   <img alt="WinForms" src="https://img.shields.io/badge/WinForms-Windows_GUI-0078D4?style=flat-square">
   <img alt="ScriptDom" src="https://img.shields.io/badge/ScriptDom-SQL_AST-CC2927?style=flat-square">
+  <img alt="PostgreSQL" src="https://img.shields.io/badge/PostgreSQL-SQL-4169E1?style=flat-square&logo=postgresql&logoColor=white">
   <img alt="Vite" src="https://img.shields.io/badge/Vite-Browser_Tools-646CFF?style=flat-square&logo=vite&logoColor=white">
   <img alt="Next.js" src="https://img.shields.io/badge/Next.js-React_App-000000?style=flat-square&logo=nextdotjs&logoColor=white">
-  <img alt="Monaco Editor" src="https://img.shields.io/badge/Monaco_Editor-Code_UI-007ACC?style=flat-square">
-  <img alt="xUnit" src="https://img.shields.io/badge/xUnit-Test_Automation-512BD4?style=flat-square">
 </p>
 
 ## Visual Charts
@@ -30,24 +32,27 @@ C# / .NET and TypeScript を中心に、静的解析ツール、Windows GUI/CLI�
 Repository-derived signals, not proficiency scores.
 
 ```mermaid
-%%{init: {"theme": "dark", "themeVariables": {"background": "#0f172a", "mainBkg": "#0f172a", "textColor": "#f8fafc", "primaryTextColor": "#f8fafc", "pie1": "#ff006e", "pie2": "#00d4ff", "pie3": "#ffbe0b", "pie4": "#8338ec", "pie5": "#06d6a0", "pieStrokeColor": "#0f172a", "pieStrokeWidth": "3px", "pieOuterStrokeColor": "#f8fafc", "pieOuterStrokeWidth": "2px", "pieTitleTextColor": "#f8fafc", "pieTitleTextSize": "18px", "pieLegendTextColor": "#f8fafc", "pieLegendTextSize": "15px", "pieSectionTextColor": "#ffffff", "pieSectionTextSize": "14px"}}}%%
+%%{init: {"theme":"dark","themeVariables":{"background":"#0f172a","mainBkg":"#0f172a","textColor":"#f8fafc","primaryTextColor":"#f8fafc","pieStrokeColor":"#0f172a","pieStrokeWidth":"3px","pieOuterStrokeColor":"#f8fafc","pieOuterStrokeWidth":"2px","pieTitleTextColor":"#f8fafc","pieTitleTextSize":"18px","pieLegendTextColor":"#f8fafc","pieLegendTextSize":"15px","pieSectionTextColor":"#ffffff","pieSectionTextSize":"14px","pie1":"#ff006e","pie2":"#00d4ff","pie3":"#ffbe0b","pie4":"#8338ec","pie5":"#06d6a0","pie6":"#3a86ff"}}}%%
 pie showData
   title Public Repository Skill Signals
-  "C# / .NET analysis tools" : 8
-  "TypeScript / browser tools" : 4
-  "Automation / PowerShell / VBA" : 4
+  "C# / .NET analysis tools" : 9
+  "TypeScript / browser tools" : 7
+  "Automation / PowerShell / VBA" : 9
   "Rust / low-level experiments" : 3
   "Editor / terminal configuration" : 2
+  "Testing / TDD practice" : 14
 ```
 
 ```mermaid
-%%{init: {"theme": "dark", "themeVariables": {"background": "#0f172a", "mainBkg": "#0f172a", "textColor": "#f8fafc", "primaryTextColor": "#f8fafc", "pie1": "#3a86ff", "pie2": "#fb5607", "pie3": "#ff006e", "pie4": "#06d6a0", "pieStrokeColor": "#0f172a", "pieStrokeWidth": "3px", "pieOuterStrokeColor": "#f8fafc", "pieOuterStrokeWidth": "2px", "pieTitleTextColor": "#f8fafc", "pieTitleTextSize": "18px", "pieLegendTextColor": "#f8fafc", "pieLegendTextSize": "15px", "pieSectionTextColor": "#ffffff", "pieSectionTextSize": "14px"}}}%%
+%%{init: {"theme":"dark","themeVariables":{"background":"#0f172a","mainBkg":"#0f172a","textColor":"#f8fafc","primaryTextColor":"#f8fafc","pieStrokeColor":"#0f172a","pieStrokeWidth":"3px","pieOuterStrokeColor":"#f8fafc","pieOuterStrokeWidth":"2px","pieTitleTextColor":"#f8fafc","pieTitleTextSize":"18px","pieLegendTextColor":"#f8fafc","pieLegendTextSize":"15px","pieSectionTextColor":"#ffffff","pieSectionTextSize":"14px","pie1":"#3a86ff","pie2":"#fb5607","pie3":"#ff006e","pie4":"#06d6a0","pie5":"#8338ec","pie6":"#ffbe0b"}}}%%
 pie showData
   title Output Types
-  "Windows GUI / CLI tools" : 7
-  "Single HTML / browser apps" : 4
-  "Reports / Excel automation" : 3
-  "Learning / systems experiments" : 3
+  "Learning / systems experiments" : 12
+  "Static analysis / code parsing" : 11
+  "Windows GUI / CLI tools" : 10
+  "Single HTML / browser apps" : 9
+  "Reports / Excel automation" : 5
+  "Editor / terminal configuration" : 2
 ```
 
 ## Skill Map
@@ -58,7 +63,7 @@ flowchart LR
 
   subgraph analysis["Static Analysis"]
     roslyn["Roslyn<br/>SemanticModel"]
-    sqlast["ScriptDom<br/>pgsqlparser"]
+    sqlast["ScriptDom<br/>PostgreSQL"]
     model["AST to domain model"]
     report["TreeView<br/>CSV / XLSX"]
   end
@@ -80,7 +85,7 @@ flowchart LR
   subgraph automation["Automation"]
     ps["PowerShell bootstrap"]
     vba["Excel VBA macros"]
-    docs["reports / evidence"]
+    actions["GitHub Actions"]
   end
 
   profile --> analysis
@@ -95,20 +100,23 @@ flowchart LR
   ts --> vite --> monaco
   wasm --> monaco
   ps --> publish
-  vba --> docs
+  vba --> actions
 ```
 
 ## Repository Evidence
 
 | Repository | Main Skills | Output |
 | --- | --- | --- |
-| [sql-analyzer](https://github.com/SSsan-00/sql-analyzer) | C#, .NET 9, WinForms, ScriptDom, pgsqlparser, xUnit | Postgres / T-SQL をTreeViewで追えるSQL解析ツール |
-| [table-analyzer](https://github.com/SSsan-00/table-analyzer) | C#, Roslyn, SemanticModel, ScriptDom, CSV, XLSX | C# / Razor Pages からSQL利用テーブル候補を抽出 |
-| [diff-viewer](https://github.com/SSsan-00/diff-viewer) | TypeScript, Vite, Monaco Editor, Rust/WASM, Vitest | 単一HTMLで動く差分ビューア |
-| [TestCodeSnippetGenerator](https://github.com/SSsan-00/TestCodeSnippetGenerator) | C#, Roslyn, MSBuildWorkspace, MSTest, WinForms | MSTest用テストメソッドスニペット生成 |
-| [ClassDiagramMaker](https://github.com/SSsan-00/ClassDiagramMaker) | C#, Roslyn, AST analysis, xUnit | C# ASTからクラス図作成を支援 |
-| [BuilderBuilder](https://github.com/SSsan-00/BuilderBuilder) | HTML, JavaScript, MSTest, localStorage | DynamicData / Builderパターン用コード生成 |
-| [TextLintByVBA](https://github.com/SSsan-00/TextLintByVBA) | VBA, Excel automation, integration tests | Excelセル文章チェックマクロ |
+| [table-analyzer](https://github.com/SSsan-00/table-analyzer) | C#, .NET 9, .NET, PowerShell, Roslyn, SemanticModel, WinForms | Table Analyzer は、C# / Razor Pages のソースコードを読み取り専用で解析し、SQLで利用しているテーブル候補をCSVまたはX... |
+| [sql-analyzer](https://github.com/SSsan-00/sql-analyzer) | C#, .NET 9, .NET, PowerShell, Roslyn, WinForms, ScriptDom | T-SQL analyzer WinForms tool |
+| [angya-app](https://github.com/SSsan-00/angya-app) | TypeScript, JavaScript, PostgreSQL, Next.js, React, Tailwind CSS, Vitest | 行脚した場所や日時を登録する(TypeScript×Next.js) |
+| [ClassDiagramMaker](https://github.com/SSsan-00/ClassDiagramMaker) | C#, .NET 9, .NET, PowerShell, Roslyn, SemanticModel, WinForms | C# AST-based class diagram generator |
+| [functions-analyzer](https://github.com/SSsan-00/functions-analyzer) | C#, .NET 9, .NET, PowerShell, Roslyn, WinForms, MSTest | WinFormsで操作するC#ソース解析ツールです。選択した `.cs` ファイル内の通常のメソッド定義をRoslyn ASTで解析し、メソッド名、XML... |
+| [ReportGeneratorDemo](https://github.com/SSsan-00/ReportGeneratorDemo) | C#, .NET, PowerShell, JavaScript, HTML, MSTest | .NET 8 + MSTest のテストコードを実行し、coverlet でカバレッジを収集して、ReportGenerator で HTML レポートを... |
+| [TextLintByVBA](https://github.com/SSsan-00/TextLintByVBA) | VBA, JavaScript, Excel | textlintをVBAで再現する試み |
+| [Razor-Indent-Formatter](https://github.com/SSsan-00/Razor-Indent-Formatter) | TypeScript, HTML, Vite | Razor(.cshtml)ファイルのインデントを整形するツール |
+| [TestCodeSnippetGenerator](https://github.com/SSsan-00/TestCodeSnippetGenerator) | C#, .NET 9, .NET, PowerShell, Roslyn, SemanticModel, MSBuildWorkspace | MSTest を .NET 9.0 環境で開発しているユーザー向けに、既存テストクラスへ貼り付けるためのテストメソッドスニペットを生成する WinForm... |
+| [diff-viewer](https://github.com/SSsan-00/diff-viewer) | TypeScript, Rust, JavaScript, HTML, Vite, Monaco Editor, Vitest | 差分を視覚化する |
 
 ## Work Style
 
@@ -121,18 +129,19 @@ flowchart TD
   ui --> verify["Test and verify behavior"]
   export --> verify
   verify --> package["Package as single HTML or single-file exe"]
+  package --> automate["Refresh profile README with repository metadata"]
 ```
 
 ## Tech Stack
 
 | Category | Skills |
 | --- | --- |
-| Languages | C#, TypeScript, PowerShell, VBA, Rust, SQL, JavaScript, Lua |
-| .NET | .NET 9, WinForms, CLI tools, xUnit, MSTest, self-contained publish |
-| Code analysis | Roslyn, SemanticModel, MSBuildWorkspace, Microsoft.SqlServer.TransactSql.ScriptDom, pgsqlparser |
-| Frontend | Vite, Next.js, React, Tailwind CSS, Monaco Editor, Vitest |
-| Data / reports | CSV, XLSX, Excel automation, static analysis reports |
-| Tooling | pnpm, PowerShell, Shell scripts, GitHub, Neovim, WezTerm |
+| Languages | C#, TypeScript, PowerShell, VBA, Rust, SQL, JavaScript, HTML, Lua, Python, Java |
+| .NET | .NET 9, .NET, WinForms, CLI, xUnit, MSTest |
+| Code analysis | Roslyn, SemanticModel, MSBuildWorkspace, ScriptDom, PostgreSQL, SQL |
+| Frontend | TypeScript, Vite, Next.js, React, Tailwind CSS, Monaco Editor, Vitest, WASM |
+| Data / reports | CSV, XLSX, Excel, VBA |
+| Tooling | PowerShell, GitHub Actions, Neovim, WezTerm, Lua |
 
 ## Current Interests
 
@@ -141,3 +150,4 @@ flowchart TD
 - Browser-based developer tools that run locally without a server
 - TDD practice and code-generation workflows
 - Rust experiments for CLI, WASM, and low-level learning
+- Editor and terminal configuration
