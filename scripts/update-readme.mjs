@@ -9,12 +9,24 @@ const apiRoot = process.env.GITHUB_API_URL || "https://api.github.com";
 const token = process.env.GITHUB_TOKEN || process.env.GH_TOKEN || "";
 const timeZone = process.env.README_TIME_ZONE || "Asia/Tokyo";
 const maxEvidenceRepositories = Number(process.env.README_MAX_REPOSITORIES || 10);
+const maxFeaturedProjects = Number(process.env.README_MAX_FEATURED_PROJECTS || 6);
 
 const ignoredRepositoryNames = new Set([
   profileRepository.toLowerCase(),
   "temp",
   "test",
 ]);
+
+const featuredRepositoryNames = [
+  "table-analyzer",
+  "sql-analyzer",
+  "diff-viewer",
+  "TestCodeSnippetGenerator",
+  "ClassDiagramMaker",
+  "functions-analyzer",
+  "Razor-Indent-Formatter",
+  "TextLintByVBA",
+];
 
 const badgeUrls = new Map([
   ["C#", "https://img.shields.io/badge/C%23-512BD4?style=for-the-badge&logo=dotnet&logoColor=white"],
@@ -149,7 +161,6 @@ const outputTypeRules = [
   ["Single HTML / browser apps", ["TypeScript", "JavaScript", "HTML", "Vite", "Next.js", "Monaco Editor", "React"]],
   ["Reports / Excel automation", ["Excel", "VBA", "CSV", "XLSX"]],
   ["Static analysis / code parsing", ["Roslyn", "SemanticModel", "ScriptDom", "PostgreSQL", "SQL"]],
-  ["Learning / systems experiments", ["Rust", "Python", "Java"]],
   ["Editor / terminal configuration", ["Neovim", "WezTerm", "Lua"]],
 ];
 
@@ -371,11 +382,17 @@ function classifyOutputTypes(signals, name, description, readme) {
     outputTypes.push("Static analysis / code parsing");
   }
 
-  if (/practice|learn|tdd|自作|練習|学んだ/.test(haystack) && !outputTypes.includes("Learning / systems experiments")) {
+  if (isLearningFocusedProject(name, description) && !outputTypes.includes("Learning / systems experiments")) {
     outputTypes.push("Learning / systems experiments");
   }
 
   return outputTypes;
+}
+
+function isLearningFocusedProject(name, description) {
+  const identity = `${name}\n${description}`.toLowerCase();
+
+  return /practice|learn|tdd|自作|練習|学んだ|テスト駆動|todo-ddd|myos|xunit|money-app/.test(identity);
 }
 
 function summarizeRepository(repository, readme, signals) {
@@ -421,14 +438,17 @@ function extractFirstParagraph(markdown) {
 }
 
 function cleanSummary(value) {
-  return truncate(
-    value
-      .replace(/\s+/g, " ")
-      .replace(/\|/g, "/")
-      .replace(/^#{1,6}\s+/, "")
-      .trim(),
-    78,
-  );
+  return value
+    .replace(/\[([^\]]+)\]\([^)]+\)/g, "$1")
+    .replace(/`([^`]+)`/g, "$1")
+    .replace(/\*\*([^*]+)\*\*/g, "$1")
+    .replace(/__([^_]+)__/g, "$1")
+    .replace(/\*([^*]+)\*/g, "$1")
+    .replace(/_([^_]+)_/g, "$1")
+    .replace(/\s+/g, " ")
+    .replace(/\|/g, "/")
+    .replace(/^#{1,6}\s+/, "")
+    .trim();
 }
 
 function compareRepositoryPriority(left, right) {
@@ -486,6 +506,7 @@ function renderReadme(repositories) {
     .filter(([, count]) => count > 0)
     .sort((left, right) => right[1] - left[1])
     .slice(0, 6);
+  const featuredRepositories = selectFeaturedRepositories(repositories);
   const evidenceRepositories = repositories.slice(0, maxEvidenceRepositories);
 
   return [
@@ -528,6 +549,10 @@ function renderReadme(repositories) {
     "",
     renderSkillMap(),
     "",
+    "## Featured Projects",
+    "",
+    renderFeaturedProjectCards(featuredRepositories),
+    "",
     "## Repository Evidence",
     "",
     renderRepositoryTable(evidenceRepositories),
@@ -545,6 +570,38 @@ function renderReadme(repositories) {
     renderCurrentInterests(skillCounts, outputTypeCounts),
     "",
   ].join("\n");
+}
+
+function selectFeaturedRepositories(repositories) {
+  const byName = new Map(repositories.map((repository) => [repository.name.toLowerCase(), repository]));
+  const featured = [];
+  const selectedNames = new Set();
+
+  for (const name of featuredRepositoryNames) {
+    const repository = byName.get(name.toLowerCase());
+
+    if (!repository) {
+      continue;
+    }
+
+    featured.push(repository);
+    selectedNames.add(repository.name.toLowerCase());
+  }
+
+  for (const repository of repositories) {
+    if (featured.length >= maxFeaturedProjects) {
+      break;
+    }
+
+    if (selectedNames.has(repository.name.toLowerCase())) {
+      continue;
+    }
+
+    featured.push(repository);
+    selectedNames.add(repository.name.toLowerCase());
+  }
+
+  return featured.slice(0, maxFeaturedProjects);
 }
 
 function countSkills(repositories) {
@@ -733,10 +790,62 @@ function renderRepositoryTable(repositories) {
 
   for (const repository of repositories) {
     const skills = skillsForRepository(repository);
-    rows.push(`| [${escapeMarkdownTable(repository.name)}](${repository.htmlUrl}) | ${escapeMarkdownTable(skills.join(", "))} | ${escapeMarkdownTable(repository.summary)} |`);
+    const summary = truncateAtBoundary(repository.summary, 118);
+    rows.push(`| [${escapeMarkdownTable(repository.name)}](${repository.htmlUrl}) | ${escapeMarkdownTable(skills.join(", "))} | ${escapeMarkdownTable(summary)} |`);
   }
 
   return rows.join("\n");
+}
+
+function renderFeaturedProjectCards(repositories) {
+  if (repositories.length === 0) {
+    return "_No featured projects found._";
+  }
+
+  const rows = [];
+
+  for (let index = 0; index < repositories.length; index += 2) {
+    const left = renderFeaturedProjectCard(repositories[index]);
+    const right = repositories[index + 1] ? renderFeaturedProjectCard(repositories[index + 1]) : "";
+    rows.push("  <tr>");
+    rows.push(`    <td width="50%" valign="top">${left}</td>`);
+    rows.push(`    <td width="50%" valign="top">${right}</td>`);
+    rows.push("  </tr>");
+  }
+
+  return [
+    "<table>",
+    "  <tbody>",
+    ...rows,
+    "  </tbody>",
+    "</table>",
+  ].join("\n");
+}
+
+function renderFeaturedProjectCard(repository) {
+  const skills = skillsForRepository(repository).slice(0, 6);
+  const outputs = repository.outputTypes.slice(0, 3);
+  const summary = truncateAtBoundary(repository.summary, 154);
+
+  return [
+    `<a href="${escapeHtml(repository.htmlUrl)}"><strong>${escapeHtml(repository.name)}</strong></a>`,
+    "<br>",
+    `<sub>${escapeHtml(summary)}</sub>`,
+    "<br><br>",
+    "<strong>Signals</strong><br>",
+    renderInlineCodeChips(skills),
+    "<br><br>",
+    "<strong>Output</strong><br>",
+    renderInlineCodeChips(outputs),
+  ].join("");
+}
+
+function renderInlineCodeChips(values) {
+  if (values.length === 0) {
+    return "<code>repository metadata</code>";
+  }
+
+  return values.map((value) => `<code>${escapeHtml(value)}</code>`).join(" ");
 }
 
 function skillsForRepository(repository) {
@@ -830,16 +939,33 @@ function joinJapaneseList(values) {
   return values.join("、");
 }
 
-function truncate(value, maxLength) {
+function truncateAtBoundary(value, maxLength) {
   if (value.length <= maxLength) {
     return value;
   }
 
-  return `${value.slice(0, maxLength - 1).trim()}...`;
+  const sliced = value.slice(0, maxLength - 3).trimEnd();
+  const boundaryIndexes = [
+    sliced.lastIndexOf(" "),
+    sliced.lastIndexOf("、"),
+    sliced.lastIndexOf("。"),
+    sliced.lastIndexOf(" / "),
+  ];
+  const boundary = Math.max(...boundaryIndexes);
+
+  if (boundary > Math.floor(maxLength * 0.55)) {
+    return `${sliced.slice(0, boundary).trimEnd()}...`;
+  }
+
+  return `${sliced}...`;
 }
 
 function escapeMarkdownTable(value) {
-  return String(value).replace(/\|/g, "\\|").replace(/\r?\n/g, " ");
+  return String(value)
+    .replace(/</g, "&lt;")
+    .replace(/>/g, "&gt;")
+    .replace(/\|/g, "\\|")
+    .replace(/\r?\n/g, " ");
 }
 
 function escapeHtml(value) {

@@ -47,10 +47,10 @@ pie showData
 %%{init: {"theme":"dark","themeVariables":{"background":"#0f172a","mainBkg":"#0f172a","textColor":"#f8fafc","primaryTextColor":"#f8fafc","pieStrokeColor":"#0f172a","pieStrokeWidth":"3px","pieOuterStrokeColor":"#f8fafc","pieOuterStrokeWidth":"2px","pieTitleTextColor":"#f8fafc","pieTitleTextSize":"18px","pieLegendTextColor":"#f8fafc","pieLegendTextSize":"15px","pieSectionTextColor":"#ffffff","pieSectionTextSize":"14px","pie1":"#3a86ff","pie2":"#fb5607","pie3":"#ff006e","pie4":"#06d6a0","pie5":"#8338ec","pie6":"#ffbe0b"}}}%%
 pie showData
   title Output Types
-  "Learning / systems experiments" : 12
   "Static analysis / code parsing" : 11
   "Windows GUI / CLI tools" : 10
   "Single HTML / browser apps" : 9
+  "Learning / systems experiments" : 7
   "Reports / Excel automation" : 5
   "Editor / terminal configuration" : 2
 ```
@@ -103,19 +103,38 @@ flowchart LR
   vba --> actions
 ```
 
+## Featured Projects
+
+<table>
+  <tbody>
+  <tr>
+    <td width="50%" valign="top"><a href="https://github.com/SSsan-00/table-analyzer"><strong>table-analyzer</strong></a><br><sub>Table Analyzer は、C# / Razor Pages のソースコードを読み取り専用で解析し、SQLで利用しているテーブル候補をCSVまたはXLSXに出力するツールです。CLI と Windows GUI を用意しています。</sub><br><br><strong>Signals</strong><br><code>C#</code> <code>.NET 9</code> <code>.NET</code> <code>PowerShell</code> <code>Roslyn</code> <code>SemanticModel</code><br><br><strong>Output</strong><br><code>Windows GUI / CLI tools</code> <code>Reports / Excel automation</code> <code>Static analysis / code parsing</code></td>
+    <td width="50%" valign="top"><a href="https://github.com/SSsan-00/sql-analyzer"><strong>sql-analyzer</strong></a><br><sub>T-SQL analyzer WinForms tool</sub><br><br><strong>Signals</strong><br><code>C#</code> <code>.NET 9</code> <code>.NET</code> <code>PowerShell</code> <code>Roslyn</code> <code>WinForms</code><br><br><strong>Output</strong><br><code>Windows GUI / CLI tools</code> <code>Static analysis / code parsing</code></td>
+  </tr>
+  <tr>
+    <td width="50%" valign="top"><a href="https://github.com/SSsan-00/diff-viewer"><strong>diff-viewer</strong></a><br><sub>差分を視覚化する</sub><br><br><strong>Signals</strong><br><code>TypeScript</code> <code>Rust</code> <code>JavaScript</code> <code>HTML</code> <code>Vite</code> <code>Monaco Editor</code><br><br><strong>Output</strong><br><code>Single HTML / browser apps</code></td>
+    <td width="50%" valign="top"><a href="https://github.com/SSsan-00/TestCodeSnippetGenerator"><strong>TestCodeSnippetGenerator</strong></a><br><sub>MSTest を .NET 9.0 環境で開発しているユーザー向けに、既存テストクラスへ貼り付けるためのテストメソッドスニペットを生成する WinForms アプリです。</sub><br><br><strong>Signals</strong><br><code>C#</code> <code>.NET 9</code> <code>.NET</code> <code>PowerShell</code> <code>Roslyn</code> <code>SemanticModel</code><br><br><strong>Output</strong><br><code>Windows GUI / CLI tools</code> <code>Static analysis / code parsing</code></td>
+  </tr>
+  <tr>
+    <td width="50%" valign="top"><a href="https://github.com/SSsan-00/ClassDiagramMaker"><strong>ClassDiagramMaker</strong></a><br><sub>C# AST-based class diagram generator</sub><br><br><strong>Signals</strong><br><code>C#</code> <code>.NET 9</code> <code>.NET</code> <code>PowerShell</code> <code>Roslyn</code> <code>SemanticModel</code><br><br><strong>Output</strong><br><code>Windows GUI / CLI tools</code> <code>Static analysis / code parsing</code></td>
+    <td width="50%" valign="top"><a href="https://github.com/SSsan-00/functions-analyzer"><strong>functions-analyzer</strong></a><br><sub>WinFormsで操作するC#ソース解析ツールです。選択した .cs ファイル内の通常のメソッド定義をRoslyn ASTで解析し、メソッド名、XMLドキュメントコメントの &lt;summary&gt;、仮引数名、戻り値の型をExcelブックに出力します。</sub><br><br><strong>Signals</strong><br><code>C#</code> <code>.NET 9</code> <code>.NET</code> <code>PowerShell</code> <code>Roslyn</code> <code>WinForms</code><br><br><strong>Output</strong><br><code>Windows GUI / CLI tools</code> <code>Reports / Excel automation</code> <code>Static analysis / code parsing</code></td>
+  </tr>
+  </tbody>
+</table>
+
 ## Repository Evidence
 
 | Repository | Main Skills | Output |
 | --- | --- | --- |
-| [table-analyzer](https://github.com/SSsan-00/table-analyzer) | C#, .NET 9, .NET, PowerShell, Roslyn, SemanticModel, WinForms | Table Analyzer は、C# / Razor Pages のソースコードを読み取り専用で解析し、SQLで利用しているテーブル候補をCSVまたはX... |
+| [table-analyzer](https://github.com/SSsan-00/table-analyzer) | C#, .NET 9, .NET, PowerShell, Roslyn, SemanticModel, WinForms | Table Analyzer は、C# / Razor Pages のソースコードを読み取り専用で解析し、SQLで利用しているテーブル候補をCSVまたはXLSXに出力するツールです。CLI と Windows GUI を用意しています。 |
 | [sql-analyzer](https://github.com/SSsan-00/sql-analyzer) | C#, .NET 9, .NET, PowerShell, Roslyn, WinForms, ScriptDom | T-SQL analyzer WinForms tool |
 | [angya-app](https://github.com/SSsan-00/angya-app) | TypeScript, JavaScript, PostgreSQL, Next.js, React, Tailwind CSS, Vitest | 行脚した場所や日時を登録する(TypeScript×Next.js) |
 | [ClassDiagramMaker](https://github.com/SSsan-00/ClassDiagramMaker) | C#, .NET 9, .NET, PowerShell, Roslyn, SemanticModel, WinForms | C# AST-based class diagram generator |
-| [functions-analyzer](https://github.com/SSsan-00/functions-analyzer) | C#, .NET 9, .NET, PowerShell, Roslyn, WinForms, MSTest | WinFormsで操作するC#ソース解析ツールです。選択した `.cs` ファイル内の通常のメソッド定義をRoslyn ASTで解析し、メソッド名、XML... |
-| [ReportGeneratorDemo](https://github.com/SSsan-00/ReportGeneratorDemo) | C#, .NET, PowerShell, JavaScript, HTML, MSTest | .NET 8 + MSTest のテストコードを実行し、coverlet でカバレッジを収集して、ReportGenerator で HTML レポートを... |
+| [functions-analyzer](https://github.com/SSsan-00/functions-analyzer) | C#, .NET 9, .NET, PowerShell, Roslyn, WinForms, MSTest | WinFormsで操作するC#ソース解析ツールです。選択した .cs ファイル内の通常のメソッド定義をRoslyn ASTで解析し、メソッド名、XMLドキュメントコメントの &lt;summary&gt;、仮引数名... |
+| [ReportGeneratorDemo](https://github.com/SSsan-00/ReportGeneratorDemo) | C#, .NET, PowerShell, JavaScript, HTML, MSTest | .NET 8 + MSTest のテストコードを実行し、coverlet でカバレッジを収集して、ReportGenerator で HTML レポートを作るサンプルです。 |
 | [TextLintByVBA](https://github.com/SSsan-00/TextLintByVBA) | VBA, JavaScript, Excel | textlintをVBAで再現する試み |
 | [Razor-Indent-Formatter](https://github.com/SSsan-00/Razor-Indent-Formatter) | TypeScript, HTML, Vite | Razor(.cshtml)ファイルのインデントを整形するツール |
-| [TestCodeSnippetGenerator](https://github.com/SSsan-00/TestCodeSnippetGenerator) | C#, .NET 9, .NET, PowerShell, Roslyn, SemanticModel, MSBuildWorkspace | MSTest を .NET 9.0 環境で開発しているユーザー向けに、既存テストクラスへ貼り付けるためのテストメソッドスニペットを生成する WinForm... |
+| [TestCodeSnippetGenerator](https://github.com/SSsan-00/TestCodeSnippetGenerator) | C#, .NET 9, .NET, PowerShell, Roslyn, SemanticModel, MSBuildWorkspace | MSTest を .NET 9.0 環境で開発しているユーザー向けに、既存テストクラスへ貼り付けるためのテストメソッドスニペットを生成する WinForms アプリです。 |
 | [diff-viewer](https://github.com/SSsan-00/diff-viewer) | TypeScript, Rust, JavaScript, HTML, Vite, Monaco Editor, Vitest | 差分を視覚化する |
 
 ## Work Style
