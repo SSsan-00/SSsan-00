@@ -2,7 +2,7 @@
 
 C# / .NET、TypeScript、Rust を中心に、静的解析ツール、Windows GUI/CLI、ブラウザで動く開発支援ツール、Excel自動化を作っています。
 
-<!-- Generated from public repository metadata, README files, manifests, and repository languages on 2026-06-08. -->
+<!-- Generated from public repository metadata, README files, manifests, and repository languages on 2026-06-09. -->
 <!-- To change this README, update scripts/update-readme.mjs. Manual edits are overwritten by the scheduled workflow. -->
 
 ## Skill Snapshot
@@ -61,7 +61,7 @@ pie showData
   "Windows GUI / CLI tools" : 10
   "Single HTML / browser apps" : 9
   "Learning / systems experiments" : 7
-  "Reports / Excel automation" : 5
+  "Reports / Excel automation" : 6
   "Editor / terminal configuration" : 2
 ```
 
@@ -126,7 +126,7 @@ flowchart LR
     <td width="50%" valign="top"><a href="https://github.com/SSsan-00/TestCodeSnippetGenerator"><strong>TestCodeSnippetGenerator</strong></a><br>MSTest を .NET 9.0 環境で開発しているユーザー向けに、既存テストクラスへ貼り付けるためのテストメソッドスニペットを生成する WinForms アプリです。<br><br><strong>Skills</strong><br><img alt="C#" src="https://img.shields.io/badge/C%23-512BD4?style=flat-square&amp;logo=dotnet&amp;logoColor=white"> <img alt=".NET 9" src="https://img.shields.io/badge/.NET_9-512BD4?style=flat-square&amp;logo=dotnet&amp;logoColor=white"> <img alt=".NET" src="https://img.shields.io/badge/.NET-512BD4?style=flat-square&amp;logo=dotnet&amp;logoColor=white"> <img alt="PowerShell" src="https://img.shields.io/badge/PowerShell-2563EB?style=flat-square&amp;logo=powershell&amp;logoColor=white"> <img alt="Roslyn" src="https://img.shields.io/badge/Roslyn-6D28D9?style=flat-square"> <img alt="SemanticModel" src="https://img.shields.io/badge/SemanticModel-7C3AED?style=flat-square"><br><br><strong>Project Type</strong><br><img alt="Windows GUI / CLI tools" src="https://img.shields.io/badge/Windows_GUI_%2F_CLI-0369A1?style=flat-square"> <img alt="Static analysis / code parsing" src="https://img.shields.io/badge/Static_analysis-7C3AED?style=flat-square"></td>
   </tr>
   <tr>
-    <td width="50%" valign="top"><a href="https://github.com/SSsan-00/ClassDiagramMaker"><strong>ClassDiagramMaker</strong></a><br>C# AST-based class diagram generator<br><br><strong>Skills</strong><br><img alt="C#" src="https://img.shields.io/badge/C%23-512BD4?style=flat-square&amp;logo=dotnet&amp;logoColor=white"> <img alt=".NET 9" src="https://img.shields.io/badge/.NET_9-512BD4?style=flat-square&amp;logo=dotnet&amp;logoColor=white"> <img alt=".NET" src="https://img.shields.io/badge/.NET-512BD4?style=flat-square&amp;logo=dotnet&amp;logoColor=white"> <img alt="PowerShell" src="https://img.shields.io/badge/PowerShell-2563EB?style=flat-square&amp;logo=powershell&amp;logoColor=white"> <img alt="Roslyn" src="https://img.shields.io/badge/Roslyn-6D28D9?style=flat-square"> <img alt="SemanticModel" src="https://img.shields.io/badge/SemanticModel-7C3AED?style=flat-square"><br><br><strong>Project Type</strong><br><img alt="Windows GUI / CLI tools" src="https://img.shields.io/badge/Windows_GUI_%2F_CLI-0369A1?style=flat-square"> <img alt="Static analysis / code parsing" src="https://img.shields.io/badge/Static_analysis-7C3AED?style=flat-square"></td>
+    <td width="50%" valign="top"><a href="https://github.com/SSsan-00/ClassDiagramMaker"><strong>ClassDiagramMaker</strong></a><br>C# AST-based class diagram generator<br><br><strong>Skills</strong><br><img alt="C#" src="https://img.shields.io/badge/C%23-512BD4?style=flat-square&amp;logo=dotnet&amp;logoColor=white"> <img alt=".NET 9" src="https://img.shields.io/badge/.NET_9-512BD4?style=flat-square&amp;logo=dotnet&amp;logoColor=white"> <img alt=".NET" src="https://img.shields.io/badge/.NET-512BD4?style=flat-square&amp;logo=dotnet&amp;logoColor=white"> <img alt="PowerShell" src="https://img.shields.io/badge/PowerShell-2563EB?style=flat-square&amp;logo=powershell&amp;logoColor=white"> <img alt="Roslyn" src="https://img.shields.io/badge/Roslyn-6D28D9?style=flat-square"> <img alt="SemanticModel" src="https://img.shields.io/badge/SemanticModel-7C3AED?style=flat-square"><br><br><strong>Project Type</strong><br><img alt="Windows GUI / CLI tools" src="https://img.shields.io/badge/Windows_GUI_%2F_CLI-0369A1?style=flat-square"> <img alt="Reports / Excel automation" src="https://img.shields.io/badge/Reports_%2F_Excel-15803D?style=flat-square"> <img alt="Static analysis / code parsing" src="https://img.shields.io/badge/Static_analysis-7C3AED?style=flat-square"></td>
     <td width="50%" valign="top"><a href="https://github.com/SSsan-00/functions-analyzer"><strong>functions-analyzer</strong></a><br>WinFormsで操作するC#ソース解析ツールです。選択した .cs ファイル内の通常のメソッド定義をRoslyn ASTで解析し、メソッド名、XMLドキュメントコメントの &lt;summary&gt;、仮引数名、戻り値の型をExcelブックに出力します。<br><br><strong>Skills</strong><br><img alt="C#" src="https://img.shields.io/badge/C%23-512BD4?style=flat-square&amp;logo=dotnet&amp;logoColor=white"> <img alt=".NET 9" src="https://img.shields.io/badge/.NET_9-512BD4?style=flat-square&amp;logo=dotnet&amp;logoColor=white"> <img alt=".NET" src="https://img.shields.io/badge/.NET-512BD4?style=flat-square&amp;logo=dotnet&amp;logoColor=white"> <img alt="PowerShell" src="https://img.shields.io/badge/PowerShell-2563EB?style=flat-square&amp;logo=powershell&amp;logoColor=white"> <img alt="Roslyn" src="https://img.shields.io/badge/Roslyn-6D28D9?style=flat-square"> <img alt="WinForms" src="https://img.shields.io/badge/WinForms-0369A1?style=flat-square"><br><br><strong>Project Type</strong><br><img alt="Windows GUI / CLI tools" src="https://img.shields.io/badge/Windows_GUI_%2F_CLI-0369A1?style=flat-square"> <img alt="Reports / Excel automation" src="https://img.shields.io/badge/Reports_%2F_Excel-15803D?style=flat-square"> <img alt="Static analysis / code parsing" src="https://img.shields.io/badge/Static_analysis-7C3AED?style=flat-square"></td>
   </tr>
   </tbody>
@@ -136,10 +136,10 @@ flowchart LR
 
 | Repository | Main Skills | Output |
 | --- | --- | --- |
+| [ClassDiagramMaker](https://github.com/SSsan-00/ClassDiagramMaker) | C#, .NET 9, .NET, PowerShell, Roslyn, SemanticModel, WinForms | C# AST-based class diagram generator |
 | [table-analyzer](https://github.com/SSsan-00/table-analyzer) | C#, .NET 9, .NET, PowerShell, Roslyn, SemanticModel, WinForms | Table Analyzer は、C# / Razor Pages のソースコードを読み取り専用で解析し、SQLで利用しているテーブル候補をCSVまたはXLSXに出力するツールです。CLI と Windows GUI を用意しています。 |
 | [sql-analyzer](https://github.com/SSsan-00/sql-analyzer) | C#, .NET 9, .NET, PowerShell, Roslyn, WinForms, ScriptDom | T-SQL analyzer WinForms tool |
 | [angya-app](https://github.com/SSsan-00/angya-app) | TypeScript, JavaScript, PostgreSQL, Next.js, React, Tailwind CSS, Vitest | 行脚した場所や日時を登録する(TypeScript×Next.js) |
-| [ClassDiagramMaker](https://github.com/SSsan-00/ClassDiagramMaker) | C#, .NET 9, .NET, PowerShell, Roslyn, SemanticModel, WinForms | C# AST-based class diagram generator |
 | [functions-analyzer](https://github.com/SSsan-00/functions-analyzer) | C#, .NET 9, .NET, PowerShell, Roslyn, WinForms, MSTest | WinFormsで操作するC#ソース解析ツールです。選択した .cs ファイル内の通常のメソッド定義をRoslyn ASTで解析し、メソッド名、XMLドキュメントコメントの &lt;summary&gt;、仮引数名... |
 | [ReportGeneratorDemo](https://github.com/SSsan-00/ReportGeneratorDemo) | C#, .NET, PowerShell, JavaScript, HTML, MSTest | .NET 8 + MSTest のテストコードを実行し、coverlet でカバレッジを収集して、ReportGenerator で HTML レポートを作るサンプルです。 |
 | [TextLintByVBA](https://github.com/SSsan-00/TextLintByVBA) | VBA, JavaScript, Excel | textlintをVBAで再現する試み |
