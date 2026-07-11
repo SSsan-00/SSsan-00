@@ -2,7 +2,7 @@
 
 C# / .NET、TypeScript、Rust を中心に、静的解析ツール、Windows GUI/CLI、ブラウザで動く開発支援ツール、Excel自動化を作っています。
 
-<!-- Generated from public repository metadata, README files, manifests, and repository languages on 2026-07-11. -->
+<!-- Generated from public repository metadata, README files, manifests, and repository languages on 2026-07-12. -->
 <!-- To change this README, update scripts/update-readme.mjs. Manual edits are overwritten by the scheduled workflow. -->
 
 ## Skill Snapshot
@@ -145,7 +145,7 @@ flowchart LR
 | [ReportGeneratorDemo](https://github.com/SSsan-00/ReportGeneratorDemo) | C#, .NET, PowerShell, JavaScript, HTML, MSTest | .NET 8 + MSTest のテストコードを実行し、coverlet でカバレッジを収集して、ReportGenerator で HTML レポートを作るサンプルです。 |
 | [TextLintByVBA](https://github.com/SSsan-00/TextLintByVBA) | VBA, JavaScript, Excel | textlintをVBAで再現する試み |
 | [Razor-Indent-Formatter](https://github.com/SSsan-00/Razor-Indent-Formatter) | TypeScript, HTML, Vite | Razor(.cshtml)ファイルのインデントを整形するツール |
-| [sql-analyzer-formatter-vba](https://github.com/SSsan-00/sql-analyzer-formatter-vba) | VBA, Excel, SQL | Excel VBA macro to convert SQL identifiers to Japanese display names using a worksheet mapping. |
+| [sql-analysis-formatter-vba](https://github.com/SSsan-00/sql-analysis-formatter-vba) | VBA, Excel, SQL | Excel VBA macro to convert SQL identifiers to Japanese display names using a worksheet mapping. |
 
 ## Work Style
 
