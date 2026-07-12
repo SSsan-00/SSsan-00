@@ -2,7 +2,7 @@
 
 C# / .NET、TypeScript、Rust を中心に、静的解析ツール、Windows GUI/CLI、ブラウザで動く開発支援ツール、Excel自動化を作っています。
 
-<!-- Generated from public repository metadata, README files, manifests, and repository languages on 2026-07-12. -->
+<!-- Generated from public repository metadata, README files, manifests, and repository languages on 2026-07-13. -->
 <!-- To change this README, update scripts/update-readme.mjs. Manual edits are overwritten by the scheduled workflow. -->
 
 ## Skill Snapshot
@@ -142,8 +142,8 @@ flowchart LR
 | [sql-analyzer](https://github.com/SSsan-00/sql-analyzer) | C#, .NET 9, .NET, PowerShell, Roslyn, WinForms, ScriptDom | T-SQL analyzer WinForms tool |
 | [angya-app](https://github.com/SSsan-00/angya-app) | TypeScript, JavaScript, PostgreSQL, Next.js, React, Tailwind CSS, Vitest | 行脚した場所や日時を登録する(TypeScript×Next.js) |
 | [functions-analyzer](https://github.com/SSsan-00/functions-analyzer) | C#, .NET 9, .NET, PowerShell, Roslyn, WinForms, MSTest | WinFormsで操作するC#ソース解析ツールです。選択した .cs ファイル内の通常のメソッド定義をRoslyn ASTで解析し、メソッド名、XMLドキュメントコメントの &lt;summary&gt;、仮引数名... |
-| [ReportGeneratorDemo](https://github.com/SSsan-00/ReportGeneratorDemo) | C#, .NET, PowerShell, JavaScript, HTML, MSTest | .NET 8 + MSTest のテストコードを実行し、coverlet でカバレッジを収集して、ReportGenerator で HTML レポートを作るサンプルです。 |
 | [TextLintByVBA](https://github.com/SSsan-00/TextLintByVBA) | VBA, JavaScript, Excel | textlintをVBAで再現する試み |
+| [ReportGeneratorDemo](https://github.com/SSsan-00/ReportGeneratorDemo) | C#, .NET, PowerShell, JavaScript, HTML, MSTest | .NET 8 + MSTest のテストコードを実行し、coverlet でカバレッジを収集して、ReportGenerator で HTML レポートを作るサンプルです。 |
 | [Razor-Indent-Formatter](https://github.com/SSsan-00/Razor-Indent-Formatter) | TypeScript, HTML, Vite | Razor(.cshtml)ファイルのインデントを整形するツール |
 | [sql-analysis-formatter-vba](https://github.com/SSsan-00/sql-analysis-formatter-vba) | VBA, Excel, SQL | Excel VBA macro to convert SQL identifiers to Japanese display names using a worksheet mapping. |
 
