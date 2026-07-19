@@ -2,7 +2,7 @@
 
 C# / .NET、TypeScript、Rust を中心に、静的解析ツール、Windows GUI/CLI、ブラウザで動く開発支援ツール、Excel自動化を作っています。
 
-<!-- Generated from public repository metadata, README files, manifests, and repository languages on 2026-07-19. -->
+<!-- Generated from public repository metadata, README files, manifests, and repository languages on 2026-07-20. -->
 <!-- To change this README, update scripts/update-readme.mjs. Manual edits are overwritten by the scheduled workflow. -->
 
 ## Skill Snapshot
@@ -45,12 +45,12 @@ Repository-derived signals, not proficiency scores.
 %%{init: {"theme":"dark","themeVariables":{"background":"#0f172a","mainBkg":"#0f172a","textColor":"#f8fafc","primaryTextColor":"#f8fafc","pieStrokeColor":"#0f172a","pieStrokeWidth":"3px","pieOuterStrokeColor":"#f8fafc","pieOuterStrokeWidth":"2px","pieTitleTextColor":"#f8fafc","pieTitleTextSize":"18px","pieLegendTextColor":"#f8fafc","pieLegendTextSize":"15px","pieSectionTextColor":"#ffffff","pieSectionTextSize":"14px","pie1":"#ff006e","pie2":"#00d4ff","pie3":"#ffbe0b","pie4":"#8338ec","pie5":"#06d6a0","pie6":"#3a86ff"}}}%%
 pie showData
   title Public Repository Skill Signals
-  "C# / .NET analysis tools" : 10
+  "C# / .NET analysis tools" : 11
   "TypeScript / browser tools" : 7
   "Automation / PowerShell / VBA" : 12
   "Rust / low-level experiments" : 3
   "Editor / terminal configuration" : 2
-  "Testing / TDD practice" : 15
+  "Testing / TDD practice" : 16
 ```
 
 ```mermaid
@@ -58,7 +58,7 @@ pie showData
 pie showData
   title Output Types
   "Static analysis / code parsing" : 14
-  "Windows GUI / CLI tools" : 11
+  "Windows GUI / CLI tools" : 12
   "Single HTML / browser apps" : 10
   "Reports / Excel automation" : 9
   "Learning / systems experiments" : 7
@@ -136,6 +136,7 @@ flowchart LR
 
 | Repository | Main Skills | Output |
 | --- | --- | --- |
+| [sql-analysis-formatter-vba](https://github.com/SSsan-00/sql-analysis-formatter-vba) | C#, .NET 9, .NET, PowerShell, VBA, ScriptDom, MSTest | Excel VBA macro to convert SQL identifiers to Japanese display names using a worksheet mapping. |
 | [ClassDiagramMaker](https://github.com/SSsan-00/ClassDiagramMaker) | C#, .NET 9, .NET, PowerShell, Roslyn, SemanticModel, WinForms | C# AST-based class diagram generator |
 | [table-analyzer](https://github.com/SSsan-00/table-analyzer) | C#, .NET 9, .NET, PowerShell, Roslyn, SemanticModel, WinForms | Table Analyzer は、C# / Razor Pages のソースコードを読み取り専用で解析し、SQLで利用しているテーブル候補をCSVまたはXLSXに出力するツールです。CLI と Windows GUI を用意しています。 |
 | [CoverageReportGenerator](https://github.com/SSsan-00/CoverageReportGenerator) | C#, .NET, PowerShell, HTML, Roslyn, WinForms, MSTest | C# / WinForms で作成した、JetBrains dotCover DetailedXML から HTML / Excel カバレッジレポートを生成するツールです。 |
@@ -145,7 +146,6 @@ flowchart LR
 | [TextLintByVBA](https://github.com/SSsan-00/TextLintByVBA) | VBA, JavaScript, Excel | textlintをVBAで再現する試み |
 | [ReportGeneratorDemo](https://github.com/SSsan-00/ReportGeneratorDemo) | C#, .NET, PowerShell, JavaScript, HTML, MSTest | .NET 8 + MSTest のテストコードを実行し、coverlet でカバレッジを収集して、ReportGenerator で HTML レポートを作るサンプルです。 |
 | [Razor-Indent-Formatter](https://github.com/SSsan-00/Razor-Indent-Formatter) | TypeScript, HTML, Vite | Razor(.cshtml)ファイルのインデントを整形するツール |
-| [sql-analysis-formatter-vba](https://github.com/SSsan-00/sql-analysis-formatter-vba) | VBA, Excel, SQL | Excel VBA macro to convert SQL identifiers to Japanese display names using a worksheet mapping. |
 
 ## Work Style
 
