@@ -2,7 +2,7 @@
 
 C# / .NET、TypeScript、Rust を中心に、静的解析ツール、Windows GUI/CLI、ブラウザで動く開発支援ツール、Excel自動化を作っています。
 
-<!-- Generated from public repository metadata, README files, manifests, and repository languages on 2026-08-03. -->
+<!-- Generated from public repository metadata, README files, manifests, and repository languages on 2026-08-04. -->
 <!-- To change this README, update scripts/update-readme.mjs. Manual edits are overwritten by the scheduled workflow. -->
 
 ## Skill Snapshot
@@ -58,7 +58,7 @@ pie showData
 pie showData
   title Output Types
   "Static analysis / code parsing" : 14
-  "Windows GUI / CLI tools" : 12
+  "Windows GUI / CLI tools" : 13
   "Single HTML / browser apps" : 10
   "Reports / Excel automation" : 9
   "Learning / systems experiments" : 7
