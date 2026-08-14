@@ -2,7 +2,7 @@
 
 C# / .NET、TypeScript、Rust を中心に、静的解析ツール、Windows GUI/CLI、ブラウザで動く開発支援ツール、Excel自動化を作っています。
 
-<!-- Generated from public repository metadata, README files, manifests, and repository languages on 2026-08-14. -->
+<!-- Generated from public repository metadata, README files, manifests, and repository languages on 2026-08-15. -->
 <!-- To change this README, update scripts/update-readme.mjs. Manual edits are overwritten by the scheduled workflow. -->
 
 ## Skill Snapshot
@@ -46,20 +46,20 @@ Repository-derived signals, not proficiency scores.
 pie showData
   title Public Repository Skill Signals
   "C# / .NET analysis tools" : 11
-  "TypeScript / browser tools" : 7
+  "TypeScript / browser tools" : 8
   "Automation / PowerShell / VBA" : 12
   "Rust / low-level experiments" : 3
   "Editor / terminal configuration" : 2
-  "Testing / TDD practice" : 16
+  "Testing / TDD practice" : 17
 ```
 
 ```mermaid
 %%{init: {"theme":"dark","themeVariables":{"background":"#0f172a","mainBkg":"#0f172a","textColor":"#f8fafc","primaryTextColor":"#f8fafc","pieStrokeColor":"#0f172a","pieStrokeWidth":"3px","pieOuterStrokeColor":"#f8fafc","pieOuterStrokeWidth":"2px","pieTitleTextColor":"#f8fafc","pieTitleTextSize":"18px","pieLegendTextColor":"#f8fafc","pieLegendTextSize":"15px","pieSectionTextColor":"#ffffff","pieSectionTextSize":"14px","pie1":"#3a86ff","pie2":"#fb5607","pie3":"#ff006e","pie4":"#06d6a0","pie5":"#8338ec","pie6":"#ffbe0b"}}}%%
 pie showData
   title Output Types
+  "Windows GUI / CLI tools" : 14
   "Static analysis / code parsing" : 14
-  "Windows GUI / CLI tools" : 13
-  "Single HTML / browser apps" : 10
+  "Single HTML / browser apps" : 11
   "Reports / Excel automation" : 9
   "Learning / systems experiments" : 7
   "Editor / terminal configuration" : 2
@@ -145,7 +145,7 @@ flowchart LR
 | [functions-analyzer](https://github.com/SSsan-00/functions-analyzer) | C#, .NET 9, .NET, PowerShell, Roslyn, WinForms, MSTest | WinFormsで操作するC#ソース解析ツールです。選択した .cs ファイル内の通常のメソッド定義をRoslyn ASTで解析し、メソッド名、XMLドキュメントコメントの &lt;summary&gt;、仮引数名... |
 | [TextLintByVBA](https://github.com/SSsan-00/TextLintByVBA) | VBA, JavaScript, Excel | textlintをVBAで再現する試み |
 | [ReportGeneratorDemo](https://github.com/SSsan-00/ReportGeneratorDemo) | C#, .NET, PowerShell, JavaScript, HTML, MSTest | .NET 8 + MSTest のテストコードを実行し、coverlet でカバレッジを収集して、ReportGenerator で HTML レポートを作るサンプルです。 |
-| [Razor-Indent-Formatter](https://github.com/SSsan-00/Razor-Indent-Formatter) | TypeScript, HTML, Vite | Razor(.cshtml)ファイルのインデントを整形するツール |
+| [wavetrace](https://github.com/SSsan-00/wavetrace) | TypeScript, JavaScript, Next.js, React, Tailwind CSS, Vitest, CLI | Real-time network quality mapping web app |
 
 ## Work Style
 
