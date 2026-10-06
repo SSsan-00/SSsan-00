@@ -2,7 +2,7 @@
 
 C# / .NET、TypeScript、Rust を中心に、静的解析ツール、Windows GUI/CLI、ブラウザで動く開発支援ツール、Excel自動化を作っています。
 
-<!-- Generated from public repository metadata, README files, manifests, and repository languages on 2026-10-05. -->
+<!-- Generated from public repository metadata, README files, manifests, and repository languages on 2026-10-06. -->
 <!-- To change this README, update scripts/update-readme.mjs. Manual edits are overwritten by the scheduled workflow. -->
 
 ## Skill Snapshot
@@ -144,7 +144,7 @@ flowchart LR
 | [angya-app](https://github.com/SSsan-00/angya-app) | TypeScript, JavaScript, PostgreSQL, Next.js, React, Tailwind CSS, Vitest | 行脚した場所や日時を登録する(TypeScript×Next.js) |
 | [mononoke-autoplay](https://github.com/SSsan-00/mononoke-autoplay) | PowerShell, Rust, JavaScript, HTML, Python, CLI, CSV | Mononoke game autoplay with local planner and optional Jev assistance |
 | [functions-analyzer](https://github.com/SSsan-00/functions-analyzer) | C#, .NET 9, .NET, PowerShell, Roslyn, WinForms, MSTest | WinFormsで操作するC#ソース解析ツールです。選択した .cs ファイル内の通常のメソッド定義をRoslyn ASTで解析し、メソッド名、XMLドキュメントコメントの &lt;summary&gt;、仮引数名... |
-| [EvidenceCrafter](https://github.com/SSsan-00/EvidenceCrafter) | C#, .NET 9, .NET, PowerShell, MSTest, Excel, GitHub Actions | Case&Evidence形式のExcelブックへスクリーンショットを安全に配置するWindowsデスクトップツールです。0.1.0-preview.35 ではExcelが返す隣接Single座標の丸めを限定的に許容し... |
+| [EvidenceCrafter](https://github.com/SSsan-00/EvidenceCrafter) | C#, .NET 9, .NET, PowerShell, MSTest, Excel, GitHub Actions | Case&Evidence形式のExcelブックへスクリーンショットを安全に配置するWindowsデスクトップツールです。0.1.0-preview.39 ではA列の番号を下へ引き継ぎ... |
 | [wavetrace](https://github.com/SSsan-00/wavetrace) | TypeScript, JavaScript, HTML, Next.js, React, Tailwind CSS, Vitest | Real-time network quality mapping web app |
 
 ## Work Style
