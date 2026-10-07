@@ -2,7 +2,7 @@
 
 C# / .NET、TypeScript、Rust を中心に、静的解析ツール、Windows GUI/CLI、ブラウザで動く開発支援ツール、Excel自動化を作っています。
 
-<!-- Generated from public repository metadata, README files, manifests, and repository languages on 2026-10-06. -->
+<!-- Generated from public repository metadata, README files, manifests, and repository languages on 2026-10-07. -->
 <!-- To change this README, update scripts/update-readme.mjs. Manual edits are overwritten by the scheduled workflow. -->
 
 ## Skill Snapshot
@@ -45,22 +45,22 @@ Repository-derived signals, not proficiency scores.
 %%{init: {"theme":"dark","themeVariables":{"background":"#0f172a","mainBkg":"#0f172a","textColor":"#f8fafc","primaryTextColor":"#f8fafc","pieStrokeColor":"#0f172a","pieStrokeWidth":"3px","pieOuterStrokeColor":"#f8fafc","pieOuterStrokeWidth":"2px","pieTitleTextColor":"#f8fafc","pieTitleTextSize":"18px","pieLegendTextColor":"#f8fafc","pieLegendTextSize":"15px","pieSectionTextColor":"#ffffff","pieSectionTextSize":"14px","pie1":"#ff006e","pie2":"#00d4ff","pie3":"#ffbe0b","pie4":"#8338ec","pie5":"#06d6a0","pie6":"#3a86ff"}}}%%
 pie showData
   title Public Repository Skill Signals
-  "C# / .NET analysis tools" : 12
+  "C# / .NET analysis tools" : 13
   "TypeScript / browser tools" : 9
-  "Automation / PowerShell / VBA" : 14
+  "Automation / PowerShell / VBA" : 15
   "Rust / low-level experiments" : 5
   "Editor / terminal configuration" : 2
-  "Testing / TDD practice" : 18
+  "Testing / TDD practice" : 19
 ```
 
 ```mermaid
 %%{init: {"theme":"dark","themeVariables":{"background":"#0f172a","mainBkg":"#0f172a","textColor":"#f8fafc","primaryTextColor":"#f8fafc","pieStrokeColor":"#0f172a","pieStrokeWidth":"3px","pieOuterStrokeColor":"#f8fafc","pieOuterStrokeWidth":"2px","pieTitleTextColor":"#f8fafc","pieTitleTextSize":"18px","pieLegendTextColor":"#f8fafc","pieLegendTextSize":"15px","pieSectionTextColor":"#ffffff","pieSectionTextSize":"14px","pie1":"#3a86ff","pie2":"#fb5607","pie3":"#ff006e","pie4":"#06d6a0","pie5":"#8338ec","pie6":"#ffbe0b"}}}%%
 pie showData
   title Output Types
-  "Windows GUI / CLI tools" : 16
-  "Static analysis / code parsing" : 16
-  "Single HTML / browser apps" : 12
-  "Reports / Excel automation" : 11
+  "Windows GUI / CLI tools" : 17
+  "Static analysis / code parsing" : 17
+  "Single HTML / browser apps" : 13
+  "Reports / Excel automation" : 12
   "Learning / systems experiments" : 8
   "Editor / terminal configuration" : 2
 ```
@@ -136,6 +136,7 @@ flowchart LR
 
 | Repository | Main Skills | Output |
 | --- | --- | --- |
+| [DBChangeLogger](https://github.com/SSsan-00/DBChangeLogger) | C#, .NET 9, .NET, PowerShell, HTML, PostgreSQL, MSTest | Windows tool to compare PostgreSQL and SQL Server changes and copy colored evidence tables to Excel. |
 | [sql-analysis-formatter-vba](https://github.com/SSsan-00/sql-analysis-formatter-vba) | C#, .NET 9, .NET, PowerShell, VBA, ScriptDom, MSTest | Excel VBA macro to convert SQL identifiers to Japanese display names using a worksheet mapping. |
 | [ClassDiagramMaker](https://github.com/SSsan-00/ClassDiagramMaker) | C#, .NET 9, .NET, PowerShell, Roslyn, SemanticModel, WinForms | C# AST-based class diagram generator |
 | [table-analyzer](https://github.com/SSsan-00/table-analyzer) | C#, .NET 9, .NET, PowerShell, Roslyn, SemanticModel, WinForms | Table Analyzer は、C# / Razor Pages のソースコードを読み取り専用で解析し、SQLで利用しているテーブル候補をCSVまたはXLSXに出力するツールです。CLI と Windows GUI を用意しています。 |
@@ -145,7 +146,6 @@ flowchart LR
 | [mononoke-autoplay](https://github.com/SSsan-00/mononoke-autoplay) | PowerShell, Rust, JavaScript, HTML, Python, CLI, CSV | Mononoke game autoplay with local planner and optional Jev assistance |
 | [functions-analyzer](https://github.com/SSsan-00/functions-analyzer) | C#, .NET 9, .NET, PowerShell, Roslyn, WinForms, MSTest | WinFormsで操作するC#ソース解析ツールです。選択した .cs ファイル内の通常のメソッド定義をRoslyn ASTで解析し、メソッド名、XMLドキュメントコメントの &lt;summary&gt;、仮引数名... |
 | [EvidenceCrafter](https://github.com/SSsan-00/EvidenceCrafter) | C#, .NET 9, .NET, PowerShell, MSTest, Excel, GitHub Actions | Case&Evidence形式のExcelブックへスクリーンショットを安全に配置するWindowsデスクトップツールです。0.1.0-preview.39 ではA列の番号を下へ引き継ぎ... |
-| [wavetrace](https://github.com/SSsan-00/wavetrace) | TypeScript, JavaScript, HTML, Next.js, React, Tailwind CSS, Vitest | Real-time network quality mapping web app |
 
 ## Work Style
 
