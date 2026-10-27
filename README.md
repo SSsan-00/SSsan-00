@@ -2,7 +2,7 @@
 
 C# / .NET、TypeScript、Rust を中心に、静的解析ツール、Windows GUI/CLI、ブラウザで動く開発支援ツール、Excel自動化を作っています。
 
-<!-- Generated from public repository metadata, README files, manifests, and repository languages on 2026-10-26. -->
+<!-- Generated from public repository metadata, README files, manifests, and repository languages on 2026-10-27. -->
 <!-- To change this README, update scripts/update-readme.mjs. Manual edits are overwritten by the scheduled workflow. -->
 
 ## Skill Snapshot
@@ -46,11 +46,11 @@ Repository-derived signals, not proficiency scores.
 pie showData
   title Public Repository Skill Signals
   "C# / .NET analysis tools" : 14
-  "TypeScript / browser tools" : 10
+  "TypeScript / browser tools" : 11
   "Automation / PowerShell / VBA" : 16
   "Rust / low-level experiments" : 5
   "Editor / terminal configuration" : 2
-  "Testing / TDD practice" : 20
+  "Testing / TDD practice" : 21
 ```
 
 ```mermaid
@@ -59,7 +59,7 @@ pie showData
   title Output Types
   "Windows GUI / CLI tools" : 18
   "Static analysis / code parsing" : 18
-  "Single HTML / browser apps" : 14
+  "Single HTML / browser apps" : 15
   "Reports / Excel automation" : 12
   "Learning / systems experiments" : 8
   "Editor / terminal configuration" : 2
