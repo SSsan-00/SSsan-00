@@ -2,7 +2,7 @@
 
 C# / .NET、TypeScript、Rust を中心に、静的解析ツール、Windows GUI/CLI、ブラウザで動く開発支援ツール、Excel自動化を作っています。
 
-<!-- Generated from public repository metadata, README files, manifests, and repository languages on 2026-11-03. -->
+<!-- Generated from public repository metadata, README files, manifests, and repository languages on 2026-11-04. -->
 <!-- To change this README, update scripts/update-readme.mjs. Manual edits are overwritten by the scheduled workflow. -->
 
 ## Skill Snapshot
@@ -57,7 +57,7 @@ pie showData
 %%{init: {"theme":"dark","themeVariables":{"background":"#0f172a","mainBkg":"#0f172a","textColor":"#f8fafc","primaryTextColor":"#f8fafc","pieStrokeColor":"#0f172a","pieStrokeWidth":"3px","pieOuterStrokeColor":"#f8fafc","pieOuterStrokeWidth":"2px","pieTitleTextColor":"#f8fafc","pieTitleTextSize":"18px","pieLegendTextColor":"#f8fafc","pieLegendTextSize":"15px","pieSectionTextColor":"#ffffff","pieSectionTextSize":"14px","pie1":"#3a86ff","pie2":"#fb5607","pie3":"#ff006e","pie4":"#06d6a0","pie5":"#8338ec","pie6":"#ffbe0b"}}}%%
 pie showData
   title Output Types
-  "Static analysis / code parsing" : 19
+  "Static analysis / code parsing" : 20
   "Windows GUI / CLI tools" : 18
   "Single HTML / browser apps" : 15
   "Reports / Excel automation" : 12
@@ -122,7 +122,7 @@ flowchart LR
     <td width="50%" valign="top"><a href="https://github.com/SSsan-00/sql-analyzer"><strong>sql-analyzer</strong></a><br>T-SQL analyzer WinForms tool<br><br><strong>Skills</strong><br><img alt="C#" src="https://img.shields.io/badge/C%23-512BD4?style=flat-square&amp;logo=dotnet&amp;logoColor=white"> <img alt=".NET 9" src="https://img.shields.io/badge/.NET_9-512BD4?style=flat-square&amp;logo=dotnet&amp;logoColor=white"> <img alt=".NET" src="https://img.shields.io/badge/.NET-512BD4?style=flat-square&amp;logo=dotnet&amp;logoColor=white"> <img alt="PowerShell" src="https://img.shields.io/badge/PowerShell-2563EB?style=flat-square&amp;logo=powershell&amp;logoColor=white"> <img alt="Roslyn" src="https://img.shields.io/badge/Roslyn-6D28D9?style=flat-square"> <img alt="WinForms" src="https://img.shields.io/badge/WinForms-0369A1?style=flat-square"><br><br><strong>Project Type</strong><br><img alt="Windows GUI / CLI tools" src="https://img.shields.io/badge/Windows_GUI_%2F_CLI-0369A1?style=flat-square"> <img alt="Static analysis / code parsing" src="https://img.shields.io/badge/Static_analysis-7C3AED?style=flat-square"></td>
   </tr>
   <tr>
-    <td width="50%" valign="top"><a href="https://github.com/SSsan-00/diff-viewer"><strong>diff-viewer</strong></a><br>差分を視覚化する<br><br><strong>Skills</strong><br><img alt="TypeScript" src="https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&amp;logo=typescript&amp;logoColor=white"> <img alt="Rust" src="https://img.shields.io/badge/Rust-111827?style=flat-square&amp;logo=rust&amp;logoColor=white"> <img alt="JavaScript" src="https://img.shields.io/badge/JavaScript-B45309?style=flat-square&amp;logo=javascript&amp;logoColor=white"> <img alt="HTML" src="https://img.shields.io/badge/HTML-DC2626?style=flat-square&amp;logo=html5&amp;logoColor=white"> <img alt="Vite" src="https://img.shields.io/badge/Vite-7C3AED?style=flat-square&amp;logo=vite&amp;logoColor=white"> <img alt="Monaco Editor" src="https://img.shields.io/badge/Monaco_Editor-007ACC?style=flat-square"><br><br><strong>Project Type</strong><br><img alt="Single HTML / browser apps" src="https://img.shields.io/badge/Browser_apps-0E7490?style=flat-square"></td>
+    <td width="50%" valign="top"><a href="https://github.com/SSsan-00/diff-viewer"><strong>diff-viewer</strong></a><br>差分を視覚化する<br><br><strong>Skills</strong><br><img alt="TypeScript" src="https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&amp;logo=typescript&amp;logoColor=white"> <img alt="Rust" src="https://img.shields.io/badge/Rust-111827?style=flat-square&amp;logo=rust&amp;logoColor=white"> <img alt="JavaScript" src="https://img.shields.io/badge/JavaScript-B45309?style=flat-square&amp;logo=javascript&amp;logoColor=white"> <img alt="HTML" src="https://img.shields.io/badge/HTML-DC2626?style=flat-square&amp;logo=html5&amp;logoColor=white"> <img alt="Vite" src="https://img.shields.io/badge/Vite-7C3AED?style=flat-square&amp;logo=vite&amp;logoColor=white"> <img alt="Monaco Editor" src="https://img.shields.io/badge/Monaco_Editor-007ACC?style=flat-square"><br><br><strong>Project Type</strong><br><img alt="Single HTML / browser apps" src="https://img.shields.io/badge/Browser_apps-0E7490?style=flat-square"> <img alt="Static analysis / code parsing" src="https://img.shields.io/badge/Static_analysis-7C3AED?style=flat-square"></td>
     <td width="50%" valign="top"><a href="https://github.com/SSsan-00/TestCodeSnippetGenerator"><strong>TestCodeSnippetGenerator</strong></a><br>MSTest を .NET 9.0 環境で開発しているユーザー向けに、既存テストクラスへ貼り付けるためのテストメソッドスニペットを生成する WinForms アプリです。<br><br><strong>Skills</strong><br><img alt="C#" src="https://img.shields.io/badge/C%23-512BD4?style=flat-square&amp;logo=dotnet&amp;logoColor=white"> <img alt=".NET 9" src="https://img.shields.io/badge/.NET_9-512BD4?style=flat-square&amp;logo=dotnet&amp;logoColor=white"> <img alt=".NET" src="https://img.shields.io/badge/.NET-512BD4?style=flat-square&amp;logo=dotnet&amp;logoColor=white"> <img alt="PowerShell" src="https://img.shields.io/badge/PowerShell-2563EB?style=flat-square&amp;logo=powershell&amp;logoColor=white"> <img alt="Roslyn" src="https://img.shields.io/badge/Roslyn-6D28D9?style=flat-square"> <img alt="SemanticModel" src="https://img.shields.io/badge/SemanticModel-7C3AED?style=flat-square"><br><br><strong>Project Type</strong><br><img alt="Windows GUI / CLI tools" src="https://img.shields.io/badge/Windows_GUI_%2F_CLI-0369A1?style=flat-square"> <img alt="Static analysis / code parsing" src="https://img.shields.io/badge/Static_analysis-7C3AED?style=flat-square"></td>
   </tr>
   <tr>
@@ -144,8 +144,8 @@ flowchart LR
 | [CoverageReportGenerator](https://github.com/SSsan-00/CoverageReportGenerator) | C#, .NET, PowerShell, HTML, Roslyn, WinForms, MSTest | C# / WinForms で作成した、JetBrains dotCover DetailedXML から HTML / Excel カバレッジレポートを生成するツールです。 |
 | [sql-analyzer](https://github.com/SSsan-00/sql-analyzer) | C#, .NET 9, .NET, PowerShell, Roslyn, WinForms, ScriptDom | T-SQL analyzer WinForms tool |
 | [angya-app](https://github.com/SSsan-00/angya-app) | TypeScript, JavaScript, PostgreSQL, Next.js, React, Tailwind CSS, Vitest | 行脚した場所や日時を登録する(TypeScript×Next.js) |
+| [diff-viewer](https://github.com/SSsan-00/diff-viewer) | TypeScript, Rust, JavaScript, HTML, Vite, Monaco Editor, Vitest | 差分を視覚化する |
 | [functions-analyzer](https://github.com/SSsan-00/functions-analyzer) | C#, .NET 9, .NET, PowerShell, Roslyn, WinForms, MSTest | WinFormsで操作するC#ソース解析ツールです。選択した .cs ファイル内の通常のメソッド定義をRoslyn ASTで解析し、メソッド名、XMLドキュメントコメントの &lt;summary&gt;、仮引数名... |
-| [mononoke-autoplay](https://github.com/SSsan-00/mononoke-autoplay) | PowerShell, Rust, JavaScript, HTML, Python, CLI, CSV | Mononoke game autoplay with local planner and optional Jev assistance |
 
 ## Work Style
 
