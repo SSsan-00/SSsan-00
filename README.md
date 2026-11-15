@@ -2,7 +2,7 @@
 
 C# / .NET、TypeScript、Rust を中心に、静的解析ツール、Windows GUI/CLI、ブラウザで動く開発支援ツール、Excel自動化を作っています。
 
-<!-- Generated from public repository metadata, README files, manifests, and repository languages on 2026-11-14. -->
+<!-- Generated from public repository metadata, README files, manifests, and repository languages on 2026-11-15. -->
 <!-- To change this README, update scripts/update-readme.mjs. Manual edits are overwritten by the scheduled workflow. -->
 
 ## Skill Snapshot
@@ -45,9 +45,9 @@ Repository-derived signals, not proficiency scores.
 %%{init: {"theme":"dark","themeVariables":{"background":"#0f172a","mainBkg":"#0f172a","textColor":"#f8fafc","primaryTextColor":"#f8fafc","pieStrokeColor":"#0f172a","pieStrokeWidth":"3px","pieOuterStrokeColor":"#f8fafc","pieOuterStrokeWidth":"2px","pieTitleTextColor":"#f8fafc","pieTitleTextSize":"18px","pieLegendTextColor":"#f8fafc","pieLegendTextSize":"15px","pieSectionTextColor":"#ffffff","pieSectionTextSize":"14px","pie1":"#ff006e","pie2":"#00d4ff","pie3":"#ffbe0b","pie4":"#8338ec","pie5":"#06d6a0","pie6":"#3a86ff"}}}%%
 pie showData
   title Public Repository Skill Signals
-  "C# / .NET analysis tools" : 14
+  "C# / .NET analysis tools" : 15
   "TypeScript / browser tools" : 11
-  "Automation / PowerShell / VBA" : 16
+  "Automation / PowerShell / VBA" : 17
   "Rust / low-level experiments" : 5
   "Editor / terminal configuration" : 2
   "Testing / TDD practice" : 21
@@ -58,8 +58,8 @@ pie showData
 pie showData
   title Output Types
   "Static analysis / code parsing" : 20
-  "Windows GUI / CLI tools" : 18
-  "Single HTML / browser apps" : 15
+  "Windows GUI / CLI tools" : 19
+  "Single HTML / browser apps" : 16
   "Reports / Excel automation" : 12
   "Learning / systems experiments" : 8
   "Editor / terminal configuration" : 2
