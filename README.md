@@ -2,7 +2,7 @@
 
 C# / .NET、TypeScript、Rust を中心に、静的解析ツール、Windows GUI/CLI、ブラウザで動く開発支援ツール、Excel自動化を作っています。
 
-<!-- Generated from public repository metadata, README files, manifests, and repository languages on 2026-11-16. -->
+<!-- Generated from public repository metadata, README files, manifests, and repository languages on 2026-11-17. -->
 <!-- To change this README, update scripts/update-readme.mjs. Manual edits are overwritten by the scheduled workflow. -->
 
 ## Skill Snapshot
@@ -47,7 +47,7 @@ pie showData
   title Public Repository Skill Signals
   "C# / .NET analysis tools" : 15
   "TypeScript / browser tools" : 12
-  "Automation / PowerShell / VBA" : 17
+  "Automation / PowerShell / VBA" : 16
   "Rust / low-level experiments" : 5
   "Editor / terminal configuration" : 2
   "Testing / TDD practice" : 21
@@ -57,8 +57,8 @@ pie showData
 %%{init: {"theme":"dark","themeVariables":{"background":"#0f172a","mainBkg":"#0f172a","textColor":"#f8fafc","primaryTextColor":"#f8fafc","pieStrokeColor":"#0f172a","pieStrokeWidth":"3px","pieOuterStrokeColor":"#f8fafc","pieOuterStrokeWidth":"2px","pieTitleTextColor":"#f8fafc","pieTitleTextSize":"18px","pieLegendTextColor":"#f8fafc","pieLegendTextSize":"15px","pieSectionTextColor":"#ffffff","pieSectionTextSize":"14px","pie1":"#3a86ff","pie2":"#fb5607","pie3":"#ff006e","pie4":"#06d6a0","pie5":"#8338ec","pie6":"#ffbe0b"}}}%%
 pie showData
   title Output Types
+  "Static analysis / code parsing" : 20
   "Windows GUI / CLI tools" : 19
-  "Static analysis / code parsing" : 19
   "Single HTML / browser apps" : 16
   "Reports / Excel automation" : 12
   "Learning / systems experiments" : 8
@@ -137,6 +137,7 @@ flowchart LR
 | Repository | Main Skills | Output |
 | --- | --- | --- |
 | [DBChangeLogger](https://github.com/SSsan-00/DBChangeLogger) | C#, .NET 9, .NET, PowerShell, HTML, PostgreSQL, MSTest | Windows tool to compare PostgreSQL and SQL Server changes and copy colored evidence tables to Excel. |
+| [php-to-csharp-migration-harness](https://github.com/SSsan-00/php-to-csharp-migration-harness) | C#, .NET, JavaScript, HTML, Python, Roslyn, Monaco Editor | A specification draft for a PHP to C# migration harness |
 | [sql-analysis-formatter-vba](https://github.com/SSsan-00/sql-analysis-formatter-vba) | C#, .NET 9, .NET, PowerShell, VBA, ScriptDom, MSTest | Excel VBA macro to convert SQL identifiers to Japanese display names using a worksheet mapping. |
 | [ClassDiagramMaker](https://github.com/SSsan-00/ClassDiagramMaker) | C#, .NET 9, .NET, PowerShell, Roslyn, SemanticModel, WinForms | C# AST-based class diagram generator |
 | [Utf8Converter](https://github.com/SSsan-00/Utf8Converter) | C#, .NET 9, .NET, PowerShell, JavaScript, HTML, MSTest | 元ファイルと文字列を守る、.NET 9製のUTF-8変換CLI。CP932からの再帰変換と厳密な検証。 |
@@ -145,7 +146,6 @@ flowchart LR
 | [sql-analyzer](https://github.com/SSsan-00/sql-analyzer) | C#, .NET 9, .NET, PowerShell, Roslyn, WinForms, ScriptDom | T-SQL analyzer WinForms tool |
 | [angya-app](https://github.com/SSsan-00/angya-app) | TypeScript, JavaScript, PostgreSQL, Next.js, React, Tailwind CSS, Vitest | 行脚した場所や日時を登録する(TypeScript×Next.js) |
 | [functions-analyzer](https://github.com/SSsan-00/functions-analyzer) | C#, .NET 9, .NET, PowerShell, Roslyn, WinForms, MSTest | WinFormsで操作するC#ソース解析ツールです。選択した .cs ファイル内の通常のメソッド定義をRoslyn ASTで解析し、メソッド名、XMLドキュメントコメントの &lt;summary&gt;、仮引数名... |
-| [mononoke-autoplay](https://github.com/SSsan-00/mononoke-autoplay) | PowerShell, Rust, JavaScript, HTML, Python, CLI, CSV | Mononoke game autoplay with local planner and optional Jev assistance |
 
 ## Work Style
 
