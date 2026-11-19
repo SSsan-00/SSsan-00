@@ -712,12 +712,12 @@ function renderIntro(skillCounts) {
 
   const work = [
     skillCounts.has("Roslyn") || skillCounts.has("ScriptDom") ? "静的解析ツール" : "",
-    skillCounts.has("WinForms") || skillCounts.has("CLI") ? "Windows GUI/CLI" : "",
+    skillCounts.has("WinForms") || skillCounts.has("CLI") ? "Windows向けのGUI・CLIツール" : "",
     skillCounts.has("Vite") || skillCounts.has("Next.js") || skillCounts.has("HTML") ? "ブラウザで動く開発支援ツール" : "",
-    skillCounts.has("VBA") || skillCounts.has("Excel") ? "Excel自動化" : "",
+    skillCounts.has("VBA") || skillCounts.has("Excel") ? "Excel作業を自動化するツール" : "",
   ].filter(Boolean);
 
-  const focusText = focus.length > 0 ? `${joinJapaneseList(focus)} を中心に` : "公開リポジトリでは";
+  const focusText = focus.length > 0 ? `主に${joinJapaneseList(focus)}を使い` : "公開リポジトリでは";
   const workText = work.length > 0 ? joinJapaneseList(work) : "開発支援ツール";
 
   return `${focusText}、${workText}を作っています。`;
