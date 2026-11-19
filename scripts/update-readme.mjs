@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 
 import { Buffer } from "node:buffer";
-import { writeFile } from "node:fs/promises";
+import { readFile, writeFile } from "node:fs/promises";
 
 const owner = process.env.README_OWNER || process.env.GITHUB_REPOSITORY_OWNER || "SSsan-00";
 const profileRepository = process.env.README_REPOSITORY || owner;
@@ -230,6 +230,7 @@ const manifestPatterns = [
 ];
 
 async function main() {
+  const profileIntro = (await readFile(new URL("../profile/intro.md", import.meta.url), "utf8")).trim();
   const repositories = await listOwnerRepositories(owner);
   const inspectedRepositories = await mapLimit(
     repositories.filter((repository) => shouldInspect(repository)),
@@ -241,7 +242,7 @@ async function main() {
     .filter((repository) => repository.signals.size > 0 || repository.description)
     .sort(compareRepositoryPriority);
 
-  const readme = renderReadme(usefulRepositories);
+  const readme = renderReadme(usefulRepositories, profileIntro);
   await writeFile("README.md", readme, "utf8");
 }
 
@@ -263,7 +264,7 @@ async function listOwnerRepositories(user) {
 }
 
 function shouldInspect(repository) {
-  if (repository.fork || repository.archived) {
+  if (repository.private || repository.fork || repository.archived) {
     return false;
   }
 
@@ -540,7 +541,7 @@ function repositoryScore(repository) {
   return score;
 }
 
-function renderReadme(repositories) {
+function renderReadme(repositories, profileIntro) {
   const skillCounts = countSkills(repositories);
   const generatedDate = formatDate(new Date(), timeZone);
   const primarySkills = selectPrimarySkills(skillCounts, 6);
@@ -557,12 +558,15 @@ function renderReadme(repositories) {
   const evidenceRepositories = repositories.slice(0, maxEvidenceRepositories);
 
   return [
-    `# ${owner}`,
+    `<!-- Generated from public repository metadata, README files, manifests, and repository languages on ${generatedDate}. -->`,
+    "<!-- Edit profile/intro.md for the introduction and featured projects. Edit scripts/update-readme.mjs for generated data. -->",
+    "",
+    profileIntro,
+    "",
+    "<details>",
+    "<summary>技術スタック・活動を見る</summary>",
     "",
     intro,
-    "",
-    `<!-- Generated from public repository metadata, README files, manifests, and repository languages on ${generatedDate}. -->`,
-    "<!-- To change this README, update scripts/update-readme.mjs. Manual edits are overwritten by the scheduled workflow. -->",
     "",
     "## Skill Snapshot",
     "",
@@ -621,6 +625,8 @@ function renderReadme(repositories) {
     "## Current Interests",
     "",
     renderCurrentInterests(skillCounts, outputTypeCounts),
+    "",
+    "</details>",
     "",
   ].join("\n");
 }
