@@ -2,7 +2,7 @@
 
 C# / .NET、TypeScript、Rust を中心に、静的解析ツール、Windows GUI/CLI、ブラウザで動く開発支援ツール、Excel自動化を作っています。
 
-<!-- Generated from public repository metadata, README files, manifests, and repository languages on 2026-11-18. -->
+<!-- Generated from public repository metadata, README files, manifests, and repository languages on 2026-11-19. -->
 <!-- To change this README, update scripts/update-readme.mjs. Manual edits are overwritten by the scheduled workflow. -->
 
 ## Skill Snapshot
@@ -45,21 +45,21 @@ Repository-derived signals, not proficiency scores.
 %%{init: {"theme":"dark","themeVariables":{"background":"#0f172a","mainBkg":"#0f172a","textColor":"#f8fafc","primaryTextColor":"#f8fafc","pieStrokeColor":"#0f172a","pieStrokeWidth":"3px","pieOuterStrokeColor":"#f8fafc","pieOuterStrokeWidth":"2px","pieTitleTextColor":"#f8fafc","pieTitleTextSize":"18px","pieLegendTextColor":"#f8fafc","pieLegendTextSize":"15px","pieSectionTextColor":"#ffffff","pieSectionTextSize":"14px","pie1":"#ff006e","pie2":"#00d4ff","pie3":"#ffbe0b","pie4":"#8338ec","pie5":"#06d6a0","pie6":"#3a86ff"}}}%%
 pie showData
   title Public Repository Skill Signals
-  "C# / .NET analysis tools" : 15
-  "TypeScript / browser tools" : 12
-  "Automation / PowerShell / VBA" : 16
+  "C# / .NET analysis tools" : 16
+  "TypeScript / browser tools" : 13
+  "Automation / PowerShell / VBA" : 17
   "Rust / low-level experiments" : 5
   "Editor / terminal configuration" : 2
-  "Testing / TDD practice" : 21
+  "Testing / TDD practice" : 22
 ```
 
 ```mermaid
 %%{init: {"theme":"dark","themeVariables":{"background":"#0f172a","mainBkg":"#0f172a","textColor":"#f8fafc","primaryTextColor":"#f8fafc","pieStrokeColor":"#0f172a","pieStrokeWidth":"3px","pieOuterStrokeColor":"#f8fafc","pieOuterStrokeWidth":"2px","pieTitleTextColor":"#f8fafc","pieTitleTextSize":"18px","pieLegendTextColor":"#f8fafc","pieLegendTextSize":"15px","pieSectionTextColor":"#ffffff","pieSectionTextSize":"14px","pie1":"#3a86ff","pie2":"#fb5607","pie3":"#ff006e","pie4":"#06d6a0","pie5":"#8338ec","pie6":"#ffbe0b"}}}%%
 pie showData
   title Output Types
-  "Static analysis / code parsing" : 20
-  "Windows GUI / CLI tools" : 19
-  "Single HTML / browser apps" : 16
+  "Static analysis / code parsing" : 21
+  "Windows GUI / CLI tools" : 20
+  "Single HTML / browser apps" : 17
   "Reports / Excel automation" : 12
   "Learning / systems experiments" : 8
   "Editor / terminal configuration" : 2
@@ -145,7 +145,7 @@ flowchart LR
 | [CoverageReportGenerator](https://github.com/SSsan-00/CoverageReportGenerator) | C#, .NET, PowerShell, HTML, Roslyn, WinForms, MSTest | C# / WinForms で作成した、JetBrains dotCover DetailedXML から HTML / Excel カバレッジレポートを生成するツールです。 |
 | [sql-analyzer](https://github.com/SSsan-00/sql-analyzer) | C#, .NET 9, .NET, PowerShell, Roslyn, WinForms, ScriptDom | T-SQL analyzer WinForms tool |
 | [angya-app](https://github.com/SSsan-00/angya-app) | TypeScript, JavaScript, PostgreSQL, Next.js, React, Tailwind CSS, Vitest | 行脚した場所や日時を登録する(TypeScript×Next.js) |
-| [functions-analyzer](https://github.com/SSsan-00/functions-analyzer) | C#, .NET 9, .NET, PowerShell, Roslyn, WinForms, MSTest | WinFormsで操作するC#ソース解析ツールです。選択した .cs ファイル内の通常のメソッド定義をRoslyn ASTで解析し、メソッド名、XMLドキュメントコメントの &lt;summary&gt;、仮引数名... |
+| [csharp-flow-viewer](https://github.com/SSsan-00/csharp-flow-viewer) | C#, .NET 9, .NET, PowerShell, JavaScript, HTML, Roslyn | Windows で、C# メソッドの制御フローを Roslyn で解析して Mermaid で表示する開発ツールです。左でプロジェクトのファイルとメソッドを選び、中央でフローをたどり、右で対応するソースを確認できます... |
 
 ## Work Style
 
