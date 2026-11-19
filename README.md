@@ -1,4 +1,4 @@
-<!-- Generated from public repository metadata, README files, manifests, and repository languages on 2026-11-19. -->
+<!-- Generated from public repository metadata, README files, manifests, and repository languages on 2026-11-20. -->
 <!-- Edit profile/intro.md for the introduction and featured projects. Edit scripts/update-readme.mjs for generated data. -->
 
 ![SSsan-00 | Developer Tools · Code Analysis · Migration](assets/profile-banner.svg)
@@ -178,7 +178,7 @@ flowchart LR
 | [CoverageReportGenerator](https://github.com/SSsan-00/CoverageReportGenerator) | C#, .NET, PowerShell, HTML, Roslyn, WinForms, MSTest | C# / WinForms で作成した、JetBrains dotCover DetailedXML から HTML / Excel カバレッジレポートを生成するツールです。 |
 | [sql-analyzer](https://github.com/SSsan-00/sql-analyzer) | C#, .NET 9, .NET, PowerShell, Roslyn, WinForms, ScriptDom | T-SQL analyzer WinForms tool |
 | [angya-app](https://github.com/SSsan-00/angya-app) | TypeScript, JavaScript, PostgreSQL, Next.js, React, Tailwind CSS, Vitest | 行脚した場所や日時を登録する(TypeScript×Next.js) |
-| [csharp-flow-viewer](https://github.com/SSsan-00/csharp-flow-viewer) | C#, .NET 9, .NET, PowerShell, JavaScript, HTML, Roslyn | Windows で、C# メソッドの制御フローを Roslyn で解析して Mermaid で表示する開発ツールです。左でプロジェクトのファイルとメソッドを選び、中央でフローをたどり、右で対応するソースを確認できます... |
+| [csharp-flow-viewer](https://github.com/SSsan-00/csharp-flow-viewer) | C#, .NET 9, .NET, PowerShell, JavaScript, HTML, Roslyn | Windows で、C# メソッドの制御フローと Razor ページのイベントを解析して Mermaid で表示する開発ツールです。左でプロジェクトのファイルと解析対象を選び、中央でフローをたどり... |
 
 ## Work Style
 
