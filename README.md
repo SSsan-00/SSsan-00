@@ -13,6 +13,10 @@
 
 C#の分岐やメソッド呼び出しを、図でたどれるWindowsツールです。Roslynでコードを解析し、**制御フロー図と対応するソースコード**を並べて表示します。
 
+<a href="https://github.com/SSsan-00/csharp-flow-viewer"><img src="assets/csharp-flow-viewer-screen.png" width="640" alt="C# Flow Viewerの実行画面。左にファイルとメソッドの一覧、中央に制御フロー図、右に対応するC#ソース"></a>
+
+*Windows版の実行画面：注文処理のサンプルを表示*
+
 ### 02 ｜ [PHP → C# Migration Harness](https://github.com/SSsan-00/php-to-csharp-migration-harness) · 移行を検証する
 
 JunieでPHPをC#／Razor Pagesへ移行するためのハーネスです。**どのファイルを対象にしたか、移行後の検証で何が分かったか**を記録します。
@@ -24,6 +28,10 @@ JunieでPHPをC#／Razor Pagesへ移行するためのハーネスです。**ど
 ### 03 ｜ [SQL Analyzer](https://github.com/SSsan-00/sql-analyzer) · SQLの構造を読む
 
 PostgreSQLとT-SQLの構造を**ツリーで表示する**Windowsツールです。ツリーで要素を選ぶと、元のSQLで該当する箇所を確認できます。
+
+<a href="https://github.com/SSsan-00/sql-analyzer"><img src="assets/sql-analyzer-screen.png" width="640" alt="SQL Analyzerの実行画面。左にサンプルSQL、右に解析結果のツリー"></a>
+
+*Windows版の実行画面：JOINと集計を含むサンプルSQLを解析*
 
 ### 04 ｜ [Diff Viewer](https://github.com/SSsan-00/diff-viewer) · 変更点を比べる
 
