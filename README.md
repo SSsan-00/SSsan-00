@@ -224,10 +224,10 @@ flowchart LR
 | [ClassDiagramMaker](https://github.com/SSsan-00/ClassDiagramMaker) | C#, .NET 9, .NET, PowerShell, Roslyn, SemanticModel, WinForms | C# AST-based class diagram generator |
 | [Utf8Converter](https://github.com/SSsan-00/Utf8Converter) | C#, .NET 9, .NET, PowerShell, JavaScript, HTML, MSTest | 元ファイルと文字列を守る、.NET 9製のUTF-8変換CLI。CP932からの再帰変換と厳密な検証。 |
 | [table-analyzer](https://github.com/SSsan-00/table-analyzer) | C#, .NET 9, .NET, PowerShell, Roslyn, SemanticModel, WinForms | Table Analyzer は、C# / Razor Pages のソースコードを読み取り専用で解析し、SQLで利用しているテーブル候補をCSVまたはXLSXに出力するツールです。CLI と Windows GUI を用意しています。 |
+| [csharp-flow-viewer](https://github.com/SSsan-00/csharp-flow-viewer) | C#, .NET 9, .NET, PowerShell, JavaScript, HTML, Roslyn | Windows で、C# メソッドの制御フローと Razor ページのイベントを解析して Mermaid で表示する開発ツールです。左でプロジェクトのファイルと解析対象を選び、中央でフローをたどり... |
 | [CoverageReportGenerator](https://github.com/SSsan-00/CoverageReportGenerator) | C#, .NET, PowerShell, HTML, Roslyn, WinForms, MSTest | C# / WinForms で作成した、JetBrains dotCover DetailedXML から HTML / Excel カバレッジレポートを生成するツールです。 |
 | [sql-analyzer](https://github.com/SSsan-00/sql-analyzer) | C#, .NET 9, .NET, PowerShell, Roslyn, WinForms, ScriptDom | T-SQL analyzer WinForms tool |
 | [angya-app](https://github.com/SSsan-00/angya-app) | TypeScript, JavaScript, PostgreSQL, Next.js, React, Tailwind CSS, Vitest | 行脚した場所や日時を登録する(TypeScript×Next.js) |
-| [csharp-flow-viewer](https://github.com/SSsan-00/csharp-flow-viewer) | C#, .NET 9, .NET, PowerShell, JavaScript, HTML, Roslyn | Windows で、C# メソッドの制御フローと Razor ページのイベントを解析して Mermaid で表示する開発ツールです。左でプロジェクトのファイルと解析対象を選び、中央でフローをたどり... |
 
 ## Work Style
 
