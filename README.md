@@ -39,6 +39,41 @@ PostgreSQLとT-SQLの構造を**ツリーで表示する**Windowsツールです
 
 <a href="https://diff-viewer-mu.vercel.app"><img src="assets/diff-viewer-demo.jpg" width="640" alt="Diff Viewerの比較画面。コードを左右に並べて差分を色分け"></a>
 
+## そのほかのツール
+
+<details>
+<summary>9つのツールを画像で見る</summary>
+
+以下は操作画面ではなく、各ツールの用途と入出力をまとめた紹介図です。
+
+### 構造を読む
+
+<p><a href="https://github.com/SSsan-00/table-analyzer"><img src="assets/tools/table-analyzer.png" width="640" alt="Table Analyzer：コードが使うテーブルを洗い出す。入力はC#／Razor Pages、出力はテーブル利用一覧（CSV／Excel）。読み書きの種類と実行箇所を出力"></a></p>
+
+<p><a href="https://github.com/SSsan-00/ClassDiagramMaker"><img src="assets/tools/class-diagram-maker.png" width="640" alt="ClassDiagramMaker：クラス同士の関係を図にする。入力はC#／Razor プロジェクト、出力はMermaid／Excelのクラス図。継承・実装・参照関係を確認"></a></p>
+
+<p><a href="https://github.com/SSsan-00/functions-analyzer"><img src="assets/tools/functions-analyzer.png" width="640" alt="Functions Analyzer：メソッドの情報を一覧にする。入力はC#の .cs ファイル、出力はExcelのメソッド一覧。名前・概要・引数名・戻り値型"></a></p>
+
+### 開発を支える
+
+<p><a href="https://github.com/SSsan-00/TestCodeSnippetGenerator"><img src="assets/tools/test-code-snippet-generator.png" width="640" alt="TestCodeSnippetGenerator：MSTestのひな形を作る。入力はC#の対象メソッド、出力はテストコードのひな形。期待値の検証は自分で追加"></a></p>
+
+<p><a href="https://github.com/SSsan-00/CoverageReportGenerator"><img src="assets/tools/coverage-report-generator.png" width="640" alt="CoverageReportGenerator：テストで未実行の行を探す。入力はdotCover XML ＋ .csproj、出力はHTML／Excelレポート。未カバー行をソースから確認"></a></p>
+
+<p><a href="https://github.com/SSsan-00/Utf8Converter"><img src="assets/tools/utf8-converter.png" width="640" alt="Utf8Converter：原本を残してUTF-8に変換。入力はCP932を含むフォルダ、出力はUTF-8版の別フォルダ。判定が曖昧なファイルはログへ"></a></p>
+
+### 業務・記録に使う
+
+<p><a href="https://github.com/SSsan-00/DBChangeLogger"><img src="assets/tools/db-change-logger.png" width="640" alt="DBChangeLogger：データの変更を試験証跡にする。入力は操作前後のDBデータ、出力はExcel貼り付け用の差分。追加・更新・削除を確認"></a></p>
+
+公開版のEXEはサンプルデータで試すためのデモ版です。
+
+<p><a href="https://github.com/SSsan-00/sql-analysis-formatter-vba"><img src="assets/tools/sql-analysis-formatter.png" width="640" alt="SQL Analysis Formatter：SQLの物理名を日本語で読む。入力はSQL ＋ 項目名の対応表、出力は和名付きのSQL・定義表。読み取り元・書き込み先も整理"></a></p>
+
+<p><a href="https://github.com/SSsan-00/angya-app"><img src="assets/tools/angya-app.png" width="640" alt="行脚アプリ：訪れた場所を記録する。入力は訪れた場所・路線、出力は行脚の記録。訪れた場所を振り返る"></a></p>
+
+</details>
+
 ## 開発で大切にしていること
 
 ツールが出した結果を、**元のコードに戻って確かめられること**を大切にしています。繰り返し作業は自動化し、人が判断するための情報は残すようにしています。
