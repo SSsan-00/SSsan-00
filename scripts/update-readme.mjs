@@ -242,8 +242,22 @@ async function main() {
     .filter((repository) => repository.signals.size > 0 || repository.description)
     .sort(compareRepositoryPriority);
 
-  const readme = renderReadme(usefulRepositories, profileIntro);
-  await writeFile("README.md", readme, "utf8");
+  const notes = renderReadme(usefulRepositories, "# 公開リポジトリの技術メモ")
+    .replaceAll('src="assets/', 'src="../assets/')
+    .replaceAll('srcset="assets/', 'srcset="../assets/');
+  await writeFile("profile/repository-notes.md", notes, "utf8");
+  await writeFile("README.md", [
+    "<!-- Edit profile/intro.md and run scripts/update-readme.mjs. -->",
+    "",
+    profileIntro,
+    "",
+    "## GitHubでの活動",
+    "",
+    renderContributionTrail(),
+    "",
+    "[技術スタックと公開リポジトリの集計](profile/repository-notes.md)",
+    "",
+  ].join("\n"), "utf8");
 }
 
 async function listOwnerRepositories(user) {
@@ -568,21 +582,21 @@ function renderReadme(repositories, profileIntro) {
     "",
     intro,
     "",
-    "## Skill Snapshot",
+    "## 主な技術",
     "",
     renderBadgeGroup(primarySkills, badgeUrls),
     "",
     renderBadgeGroup(secondarySkills, flatBadgeUrls),
     "",
-    "## Contribution Trail",
+    "## GitHubでの活動",
     "",
-    "Daily GitHub activity rendered as a neon contribution path.",
+    "GitHubの活動履歴を表示しています。",
     "",
     renderContributionTrail(),
     "",
-    "## Visual Charts",
+    "## 公開リポジトリの傾向",
     "",
-    "Repository-derived signals, not proficiency scores.",
+    "公開リポジトリの構成から集計した値で、技術の習熟度を示すものではありません。",
     "",
     renderPieChart("Public Repository Skill Signals", skillSignalChart, [
       "#ff006e",
@@ -602,27 +616,27 @@ function renderReadme(repositories, profileIntro) {
       "#ffbe0b",
     ]),
     "",
-    "## Skill Map",
+    "## 技術と用途の関係",
     "",
     renderSkillMap(),
     "",
-    "## Featured Projects",
+    "## リポジトリ別の技術と用途",
     "",
     renderFeaturedProjectCards(featuredRepositories),
     "",
-    "## Repository Evidence",
+    "## 集計に使った公開リポジトリ",
     "",
     renderRepositoryTable(evidenceRepositories),
     "",
-    "## Work Style",
+    "## 開発の進め方",
     "",
     renderWorkStyle(),
     "",
-    "## Tech Stack",
+    "## 技術スタック",
     "",
     renderTechStack(skillCounts, languageSkills),
     "",
-    "## Current Interests",
+    "## 現在の関心分野",
     "",
     renderCurrentInterests(skillCounts, outputTypeCounts),
     "",
