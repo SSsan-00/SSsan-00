@@ -12,7 +12,7 @@ C#やSQLを読み解くツールと、PHPからC#への移行を支援するツ�
 
 C#メソッドの分岐・呼び出しと、RazorページのイベントやJavaScriptを図でたどるWindowsツールです。図とソースを行き来でき、静的に特定できた呼び出し先も開けます。
 
-<a href="https://github.com/SSsan-00/csharp-flow-viewer"><img src="assets/csharp-flow-viewer-screen.png" width="760" alt="C# Flow Viewerの注文処理サンプル。左にファイルと解析対象、中央に制御フロー、右に対応するC#ソース"></a>
+<a href="https://github.com/SSsan-00/csharp-flow-viewer"><img src="assets/csharp-flow-viewer-screen.png" width="760" alt="C# Flow Viewerの注文処理サンプル。左にファイルと解析対象、中央に制御フロー、右にC#ソース、図の下に呼び出し元・呼び出し先へ移動するボタン"></a>
 
 ### [PHP → C# Migration Harness](https://github.com/SSsan-00/php-to-csharp-migration-harness)
 
