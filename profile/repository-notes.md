@@ -1,4 +1,4 @@
-<!-- Generated from public repository metadata, README files, manifests, and repository languages on 2026-11-22. -->
+<!-- Generated from public repository metadata, README files, manifests, and repository languages on 2026-11-23. -->
 <!-- Edit profile/intro.md for the introduction and featured projects. Edit scripts/update-readme.mjs for generated data. -->
 
 # 公開リポジトリの技術メモ
@@ -50,7 +50,7 @@ pie showData
   title Public Repository Skill Signals
   "C# / .NET analysis tools" : 16
   "TypeScript / browser tools" : 13
-  "Automation / PowerShell / VBA" : 17
+  "Automation / PowerShell / VBA" : 18
   "Rust / low-level experiments" : 5
   "Editor / terminal configuration" : 2
   "Testing / TDD practice" : 22
@@ -139,8 +139,8 @@ flowchart LR
 
 | Repository | Main Skills | Output |
 | --- | --- | --- |
+| [php-to-csharp-migration-harness](https://github.com/SSsan-00/php-to-csharp-migration-harness) | C#, .NET 9, .NET, PowerShell, JavaScript, HTML, Python | A specification draft for a PHP to C# migration harness |
 | [DBChangeLogger](https://github.com/SSsan-00/DBChangeLogger) | C#, .NET 9, .NET, PowerShell, HTML, PostgreSQL, MSTest | Windows tool to compare PostgreSQL and SQL Server changes and copy colored evidence tables to Excel. |
-| [php-to-csharp-migration-harness](https://github.com/SSsan-00/php-to-csharp-migration-harness) | C#, .NET, JavaScript, HTML, Python, Roslyn, Monaco Editor | A specification draft for a PHP to C# migration harness |
 | [sql-analysis-formatter-vba](https://github.com/SSsan-00/sql-analysis-formatter-vba) | C#, .NET 9, .NET, PowerShell, VBA, ScriptDom, MSTest | Excel VBA macro to convert SQL identifiers to Japanese display names using a worksheet mapping. |
 | [ClassDiagramMaker](https://github.com/SSsan-00/ClassDiagramMaker) | C#, .NET 9, .NET, PowerShell, Roslyn, SemanticModel, WinForms | C# AST-based class diagram generator |
 | [Utf8Converter](https://github.com/SSsan-00/Utf8Converter) | C#, .NET 9, .NET, PowerShell, JavaScript, HTML, MSTest | 元ファイルと文字列を守る、.NET 9製のUTF-8変換CLI。CP932からの再帰変換と厳密な検証。 |
