@@ -12,13 +12,13 @@ C#メソッドの分岐・呼び出しと、RazorページのイベントやJava
 
 <a href="https://github.com/SSsan-00/csharp-flow-viewer"><img src="assets/csharp-flow-viewer-screen.png" width="760" alt="C# Flow Viewerの注文処理サンプル。左にファイルと解析対象、中央に制御フロー、右にC#ソース、図の下に呼び出し元・呼び出し先へ移動するボタン"></a>
 
-### [PHP → C# Migration Harness](https://github.com/SSsan-00/php-to-csharp-migration-harness)
+### [MoCA（モカ）](https://github.com/SSsan-00/moca)
 
 Junie CLIを使ったPHPからC#／Razor Pagesへの移行を、Run単位で管理します。進捗・差分・ビルドやチェッカーの結果を記録し、停止したRunを再開できます。
 
-<a href="https://sssan-00.github.io/php-to-csharp-migration-harness/progress-demo.html"><img src="assets/migration-harness-demo.png" width="760" alt="PHPからC#への移行ハーネス。模擬データで実行工程とログを表示"></a>
+<a href="https://sssan-00.github.io/moca/progress-demo.html"><img src="assets/migration-harness-demo.png" width="760" alt="MoCAの進捗ダッシュボード。模擬データで移行工程と実行ログを表示"></a>
 
-[進捗デモ](https://sssan-00.github.io/php-to-csharp-migration-harness/progress-demo.html) · [Windowsユーザーガイド](https://github.com/SSsan-00/php-to-csharp-migration-harness/blob/main/docs/windows-user-guide.md)
+[進捗デモ](https://sssan-00.github.io/moca/progress-demo.html) · [Windowsユーザーガイド](https://github.com/SSsan-00/moca/blob/main/docs/windows-user-guide.md)
 
 ### [SQL Analyzer](https://github.com/SSsan-00/sql-analyzer)
 
