@@ -1,4 +1,4 @@
-<!-- Generated from public repository metadata, README files, manifests, and repository languages on 2026-11-25. -->
+<!-- Generated from public repository metadata, README files, manifests, and repository languages on 2026-11-26. -->
 <!-- Edit profile/intro.md for the introduction and featured projects. Edit scripts/update-readme.mjs for generated data. -->
 
 # 公開リポジトリの技術メモ
@@ -139,7 +139,7 @@ flowchart LR
 
 | Repository | Main Skills | Output |
 | --- | --- | --- |
-| [php-to-csharp-migration-harness](https://github.com/SSsan-00/php-to-csharp-migration-harness) | C#, .NET 9, .NET, PowerShell, JavaScript, HTML, Python | A specification draft for a PHP to C# migration harness |
+| [moca](https://github.com/SSsan-00/moca) | C#, .NET 9, .NET, PowerShell, JavaScript, HTML, Python | MoCA（モカ）: Junieを使ったPHPからC#・Razor Pagesへの移行を支援するWindowsツール |
 | [DBChangeLogger](https://github.com/SSsan-00/DBChangeLogger) | C#, .NET 9, .NET, PowerShell, HTML, PostgreSQL, MSTest | Windows tool to compare PostgreSQL and SQL Server changes and copy colored evidence tables to Excel. |
 | [sql-analysis-formatter-vba](https://github.com/SSsan-00/sql-analysis-formatter-vba) | C#, .NET 9, .NET, PowerShell, VBA, ScriptDom, MSTest | Excel VBA macro to convert SQL identifiers to Japanese display names using a worksheet mapping. |
 | [ClassDiagramMaker](https://github.com/SSsan-00/ClassDiagramMaker) | C#, .NET 9, .NET, PowerShell, Roslyn, SemanticModel, WinForms | C# AST-based class diagram generator |
